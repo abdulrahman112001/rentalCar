@@ -1,0 +1,5 @@
+export {default as Main} from './home/Home'
+export {default as Blogs} from './blogs/Blogs'
+export {default as Contact} from './contact/Contact'
+export {default as OurCars} from './ourcars/OurCars'
+export {default as About} from './about/About'

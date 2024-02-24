@@ -1,12 +1,11 @@
-import { Inter } from "next/font/google";
-import Test from "./test";
-import Button from "@mui/material/Button";
-
+import {Navbar,Footer} from "@/components/organisms";
+import { Main } from "@/components/templates";
 export default function Home() {
   return (
-    <div>
-      <Test />
-      <Button variant="contained">Hello world</Button>
-    </div>
+    < >
+      <Navbar />
+      <Main/>
+      <Footer />
+    </>
   );
 }
