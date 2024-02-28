@@ -48,7 +48,7 @@ export default function CarDetails() {
         </div>
         <div className="check lg:min-w-[450px] bg-[#FAF9F9] shadow-xl rounded-lg px-6 py-10  self-start">
           <div className=' pb-6 border-b border-[#1e1e1e81]'><PricingBox Offer='500 AED/' Price='600 AED' Time='day' /></div>
-          <SearchBox TitleButton='Check Availability' link='/OurCars/CarDetails/BookEasly'/>
+          <SearchBox TitleButton='Check Availability' link='/OurCars/CarDetails/BookEasily'/>
           <ul className=' flex flex-col gap-2'>
             <li className='text-[18px] lg:text-[20px] font-medium text-[#666666]'><span>1.</span> 1 Day Rental Available</li>
             <li className='text-[18px] lg:text-[20px] font-medium text-[#666666]'><span>2.</span> Deposit: AED 300</li>
@@ -64,10 +64,7 @@ export default function CarDetails() {
         </div>
         <RequimentsModal />
         <FAQModal />
-        {/* <div className='h-[88px] flex justify-between items-center bg-[#FAF9F9] p-5'>
-          <span className='font-medium text-[22px] lg:text-[24px]'>FAQ</span>
-          <a href="/OurCars/CarDetails/FAQ"><Image src={ToForward} alt=''/></a>
-        </div> */}
+
       </div>
     </div>
   )
