@@ -29,6 +29,9 @@ export {default as PricingBox} from './PricingBox';
 export {default as AccordionBox} from './AccordionBox';
 export {default as TabsBox} from './TabsBox';
 export {default as MainCarousel} from './MainCarousel';
+export {default as RequimentsModal} from './RequimentsModal';
+export {default as FAQModal} from './FAQModal';
+
 
 
 

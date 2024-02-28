@@ -1,5 +1,5 @@
-import { CarInsurance, CarSeat, Check1, Check2, Check3, Check4, Check5, FuelStation, Measuring, MoneyDollar, RedCheck, RedDoor, ToBack, ToForward } from '@/components/atom/assets'
-import { PricingBox, SearchBox, SpecificationBox } from '@/components/moluecles'
+import { CarInsurance, CarSeat, Check1, Check2, Check3, Check4, Check5, Close, FuelStation, Measuring, MoneyDollar, RedCheck, RedDoor, ToBack, ToForward } from '@/components/atom/assets'
+import { AccordionBox, FAQModal, MainModal, PricingBox, RequimentsModal, SearchBox, SpecificationBox } from '@/components/moluecles'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -62,14 +62,12 @@ export default function CarDetails() {
           <span className='font-medium text-[22px] lg:text-[24px]'>Supplier Details </span>
           <a href=""><Image src={ToForward} alt=''/></a>
         </div>
-        <div className='h-[88px] flex justify-between items-center bg-[#FAF9F9] p-5'>
-          <span className='font-medium text-[22px] lg:text-[24px]'>Requirments</span>
-          <a href="/OurCars/CarDetails/Requirments"><Image src={ToForward} alt=''/></a>
-        </div>
-        <div className='h-[88px] flex justify-between items-center bg-[#FAF9F9] p-5'>
+        <RequimentsModal />
+        <FAQModal />
+        {/* <div className='h-[88px] flex justify-between items-center bg-[#FAF9F9] p-5'>
           <span className='font-medium text-[22px] lg:text-[24px]'>FAQ</span>
           <a href="/OurCars/CarDetails/FAQ"><Image src={ToForward} alt=''/></a>
-        </div>
+        </div> */}
       </div>
     </div>
   )

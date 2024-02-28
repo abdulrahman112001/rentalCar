@@ -37,9 +37,9 @@ export default function BrandAndModelBox() {
                             label="Brand"
                             onChange={handleChangeBrand}
                             >
-                            <MenuItem value='BMW'><div className='flex items-center justify-between'><span>BMW</span> <Image src={BMW} alt='' className='w-[28px]' /></div></MenuItem>
-                            <MenuItem value='Mercides'><div className='flex items-center justify-between'><span>Mercides</span> <Image src={BMW} alt='' className='w-[28px]' /></div></MenuItem>
-                            <MenuItem value='TOYOTA'><div className='flex items-center justify-between'><span>TOYOTA    </span> <Image src={BMW} alt='' className='w-[28px]' /></div></MenuItem>
+                            <MenuItem value='BMW'><div className='flex items-center justify-between w-full'><span>BMW</span> <Image src={BMW} alt='' className='w-[28px]' /></div></MenuItem>
+                            <MenuItem value='Mercides'><div className='flex items-center justify-between w-full'><span>Mercides</span> <Image src={BMW} alt='' className='w-[28px]' /></div></MenuItem>
+                            <MenuItem value='TOYOTA'><div className='flex items-center justify-between w-full'><span>TOYOTA    </span> <Image src={BMW} alt='' className='w-[28px]' /></div></MenuItem>
                             </Select>
                         </FormControl>
                     </Box>
