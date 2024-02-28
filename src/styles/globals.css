@@ -15,17 +15,17 @@ body {
     box-sizing: border-box;
 }
 
-.swiper-button-next {
+.best-box .swiper-button-next {
     color: #D9D9D9 !important;
 }
-.swiper-button-prev {
+.best-box .swiper-button-prev {
     color: #D9D9D9 !important;
 }
-.swiper-pagination-bullet-active {
+.best-box .swiper-pagination-bullet-active {
     background-color: #D9D9D9 !important;
 }
-.swiper-button-next:after,
-.swiper-button-prev:after {
+.best-box .swiper-button-next:after,
+.best-box .swiper-button-prev:after {
     font-size: 15px !important;
     width: 24px;
     height: 24px;
@@ -38,4 +38,86 @@ body {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+}
+
+
+
+.main-carousel .swiper-button-next {
+    color: #1E1E1E !important;
+}
+.main-carousel .swiper-button-prev {
+    color: #1E1E1E !important;
+}
+.main-carousel .swiper-pagination-bullet-active {
+    background-color: #1E1E1E !important;
+}
+.main-carousel .swiper-button-next:after,
+.main-carousel .swiper-button-prev:after {
+    font-size: 20px !important;
+    min-width: 47px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #1E1E1E ;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.main-carousel .swiper-backface-hidden .swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.checks .mui-j204z7-MuiFormControlLabel-root {
+    height: 30px;
+}
+.checks .mui-i4bv87-MuiSvgIcon-root {
+    fill: #D5281D;
+    
+}
+
+
+
+.accordion-faq .mui-i4bv87-MuiSvgIcon-root {
+    width: 0;
+}
+.accordion-faq .mui-1c35hjw-MuiPaper-root-MuiAccordion-root {
+    margin-bottom: 25px;
+}
+.accordion-faq .mui-o4b71y-MuiAccordionSummary-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+.accordion-faq .mui-15v22id-MuiAccordionDetails-root {
+    padding: 20px;
+    color: #777;
+}
+
+
+
+.requiments .mui-w8dmq8 {
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.199);
+}
+.requiments .mui-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+    background: #fff;
+    color: #D5281D;
+    border: none;
+    outline: none;
+}
+.requiments .mui-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+    flex: 1;
+    background: #EFECEC;
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: none;
+}
+.requiments .mui-1aquho2-MuiTabs-indicator {
+    display: none;
 }

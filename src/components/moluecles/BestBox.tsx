@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { BMW,New,Sale,Door,Size,Econm,Chair,Country,Petrol,SeeDetails } from '../atom/assets'
+import { New,Sale,Door,Size,Econm,Chair,Country,Petrol,SeeDetails } from '../atom/assets'
 
 
 import React, { useRef, useState } from 'react';
@@ -13,7 +13,7 @@ import 'swiper/css/navigation';
 
 // import required modules
 import { Pagination, Navigation } from 'swiper/modules';
-import { StateBox } from '.';
+import { PricingBox, StateBox } from '.';
 
 
 export default function BestBox({CarLogo,NavigationState,NewState,SaleState,Image1,Image2,Image3,title,WeekPrice,DayPrice,WeekOffer,DayOffer,CarDoors,CarTank,CarEconm,CarSeat,CarCountry,CarBattery}:any) {
@@ -43,8 +43,12 @@ export default function BestBox({CarLogo,NavigationState,NewState,SaleState,Imag
             <div className="content w-full p-6 bg-[#f3efef71] group-hover:bg-[#EFECEC]">
                 <h2 className=' font-medium text-[24px] leading-7 text-center mb-5'>{title}</h2>
                 <div className='flex justify-center text-center'>
-                    <p className='flex flex-col text-[20px] font-medium px-2 leading-6 border-r-4 border-[#D9D9D9]'><span><span className='text-[#62c05b]'>{DayOffer}</span> /DAY</span> <span className=' line-through text-[#D5281D] text-[16px]'>{DayPrice}</span></p>
-                    <p className='flex flex-col text-[20px] font-medium px-2 leading-6 '><span><span className='text-[#62c05b]'>{WeekOffer}</span> /MON</span> <span className=' line-through text-[#D5281D]  text-[16px]'>{WeekPrice}</span></p>
+                    <div className='border-r-4 border-[#D9D9D9]'>
+                    <PricingBox Offer={DayOffer} Price={DayPrice} Time='/DAY'  />
+                    </div>
+                    <PricingBox Offer={WeekOffer} Price={WeekPrice} Time='/MON'  />
+                    {/* <p className='flex flex-col text-[20px] font-medium px-2 leading-6 border-r-4 border-[#D9D9D9]'><span><span className='text-[#62c05b]'>{DayOffer}</span> /DAY</span> <span className=' line-through text-[#D5281D] text-[16px]'>{DayPrice}</span></p> */}
+                    {/* <p className='flex flex-col text-[20px] font-medium px-2 leading-6 '><span><span className='text-[#62c05b]'>{WeekOffer}</span> /MON</span> <span className=' line-through text-[#D5281D]  text-[16px]'>{WeekPrice}</span></p> */}
                 </div>
                 <div className='mt-6 relative'>
                     <div className='mt-4 flex flex-wrap gap-x-2 md:gap-x-6 gap-y-3 group-hover:invisible'>

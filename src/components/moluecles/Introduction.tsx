@@ -12,7 +12,7 @@ export default function Introduction() {
         <h1 className="font-medium text-[28px] md:text-[40px] text-[#666666] leading-[58px] mb-5">
         MOST TRUSTED IN DUBAI{' '}
         </h1>
-        <MainButton title='Find Car'/>
+        <MainButton title='Find Cars' link='/OurCars'/>
         <Image
         src={Road}
         alt=""

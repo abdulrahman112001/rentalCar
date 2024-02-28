@@ -36,7 +36,7 @@ export default function Navbar() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <div className="text-right p-2">
-        <CloseIcon className=" cursor-pointer text-[25px]"  onClick={toggleDrawer(anchor, false)}/>
+        <CloseIcon className=" cursor-pointer text-[25px] text-[#333]"  onClick={toggleDrawer(anchor, false)}/>
       </div>
       <List className="flex gap-3">
         <div className="image">
@@ -102,7 +102,7 @@ export default function Navbar() {
             <Drawer
               anchor={anchor}
               open={state[anchor]}
-              // onClose={toggleDrawer(anchor, false)}
+              onClose={toggleDrawer(anchor, false)}
             >
               {list(anchor)}
             </Drawer>

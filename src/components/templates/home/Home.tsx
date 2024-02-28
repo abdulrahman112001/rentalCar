@@ -8,8 +8,8 @@ import {
     BigTypeBox,
     Introduction,
     MainButton,
+    MainCarousel,
     MainHeading,
-    ReviewBox,
 } from '@/components/moluecles';
 import {
     BlackBackground,
@@ -21,11 +21,11 @@ export default function Main() {
     return (
         <>
             <Introduction />
-            <div className="carousel container mx-auto">
-                <p>carousel</p>
+            <div className="main-carousel container mx-auto mt-10 px-5 md:px-10">
+                <MainCarousel />
             </div>
-            <div className="journey container  my-24 mx-auto px-10">
-                <MainHeading heading="START YOUR JOURNEY" />
+            <div className="journey container  my-24 mx-auto px-5">
+                <div className='text-center'><MainHeading heading="START YOUR JOURNEY" /></div>
                 <BigJourneyBox />
             </div>
             <div className="offer  relative my-24">
@@ -45,27 +45,27 @@ export default function Main() {
                     className=" absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[80%] md:-translate-y-[75%] w-[270px] md:w-auto"
                 />
             </div>
-            <div className="types container mx-auto my-24 px-10">
-                <MainHeading heading="CAR TYPES" />
+            <div className="types container mx-auto my-24 px-5 ">
+                <div className='text-center'><MainHeading heading="CAR TYPES" /></div>
                 <BigTypeBox />
             </div>
-            <div className="best-cars container mx-auto my-24 px-10">
-                <MainHeading heading="BEST CARS" />
+            <div className="best-cars container mx-auto my-24 px-5">
+                <div className='text-center'><MainHeading heading="BEST CARS" /></div>
                 <BigBestBox />
-                <MainButton title='ALL CARS'  />
+                <MainButton title='ALL CARS' link='/OurCars'/>
             </div>
-            <div className="chuffars container mx-auto my-24 px-10">
-                <MainHeading heading="CAR & CHUFFAR" />
+            <div className="chuffars container mx-auto my-24 px-5">
+                <div className='text-center'><MainHeading heading="CAR & CHUFFAR" /></div>
                 <BigChuffarBox />
-                <MainButton title='ALL CARS'  />
+                <MainButton title='ALL CARS' link='/OurCars'  />
             </div>
-            <div className="articles container mx-auto my-24 px-10">
-                <MainHeading heading="Articles" />
+            <div className="articles container mx-auto my-24 px-5">
+                <div className='text-center'><MainHeading heading="Articles" /></div>
                 <BigArticleBox />
                 <MainButton link='Blogs' title='All Articles'  />
             </div>
-            <div className="reviews container mx-auto my-24 px-10">
-                <MainHeading heading="REVIEWS" />
+            <div className="reviews container mx-auto my-24 px-5">
+                <div className="text-center"><MainHeading heading="REVIEWS"/></div>
                 <BigReviewBox />
             </div>
         </>
