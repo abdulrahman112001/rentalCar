@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import React from 'react'
-import { Suv } from '../atom/assets'
 
 export default function ArticleBox({ArticleImage,ArticleTitle,ArticleContent,date,link}:any) {
     return (
