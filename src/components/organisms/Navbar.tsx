@@ -10,6 +10,7 @@ import Divider from '@mui/material/Divider';
 
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
+import Link from 'next/link';
 
 export default function Navbar() {
   const [state, setState] = React.useState({
@@ -40,9 +41,9 @@ export default function Navbar() {
       </div>
       <List className="flex gap-3">
         <div className="image">
-          <a href="">
+          <Link href="/">
             <Image src={Logo} alt="" className="w-[120px]" />
-          </a>
+          </Link>
         </div>
         <Languages />
       </List>
@@ -72,9 +73,9 @@ export default function Navbar() {
           <MainLink link="/">Home</MainLink>
         </div>
         <div className="image w-[120px]">
-          <a href="">
+          <Link href="/">
             <Image src={Logo} alt="" className="w-[120px]" />
-          </a>
+          </Link>
         </div>
         <div className="right flex gap-9">
           <MainLink link="ContactUs">Contact Us</MainLink>

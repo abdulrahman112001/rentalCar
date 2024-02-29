@@ -14,6 +14,7 @@ import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
 import Image from 'next/image';
 import { Carousel1, RedCheck, Slide1, Slide2, Slide3 } from '../atom/assets';
 import { MainHeading, PricingBox } from '.';
+import Link from 'next/link';
 
 export default function MainCarousel() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -41,11 +42,11 @@ export default function MainCarousel() {
                             <li className='flex gap-4 '><Image src={RedCheck} alt=''/><span className='text-[20px] font-medium leading-6'>Driver included</span></li>
                             <li className='flex gap-4 '><Image src={RedCheck} alt=''/><span className='text-[20px] font-medium leading-6'>Deposit: AED300</span></li>
                         </ul>
-                        <a href="">
+                        <Link href="/OurCars/CarDetails">
                             <button className="h-[44px]   font-medium text-[20px] leading-6 border hover:shadow-2xl  border-[#1E1E1E]  rounded py-2 px-7 ">
                                 See Details
                             </button>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </SwiperSlide>
@@ -61,11 +62,11 @@ export default function MainCarousel() {
                             <li className='flex gap-4 '><Image src={RedCheck} alt=''/><span className='text-[20px] font-medium leading-6'>Driver included</span></li>
                             <li className='flex gap-4 '><Image src={RedCheck} alt=''/><span className='text-[20px] font-medium leading-6'>Deposit: AED300</span></li>
                         </ul>
-                        <a href="">
+                        <Link href="/OurCars/CarDetails">
                             <button className="h-[44px]   font-medium text-[20px] leading-6 border hover:shadow-2xl  border-[#1E1E1E]  rounded py-2 px-7 ">
                                 See Details
                             </button>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </SwiperSlide>
@@ -81,11 +82,11 @@ export default function MainCarousel() {
                             <li className='flex gap-4 '><Image src={RedCheck} alt=''/><span className='text-[20px] font-medium leading-6'>Driver included</span></li>
                             <li className='flex gap-4 '><Image src={RedCheck} alt=''/><span className='text-[20px] font-medium leading-6'>Deposit: AED300</span></li>
                         </ul>
-                        <a href="">
+                        <Link href="/OurCars/CarDetails">
                             <button className="h-[44px]   font-medium text-[20px] leading-6 border hover:shadow-2xl  border-[#1E1E1E]  rounded py-2 px-7 ">
                                 See Details
                             </button>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </SwiperSlide>
