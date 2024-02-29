@@ -16,6 +16,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/organisms/Navbar.tsx", "src/components/atom/assets/index.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/organisms/Navbar.tsx", "src/components/atom/assets/index.ts"],
   "exclude": ["node_modules"]
 }
