@@ -55,6 +55,7 @@ export default function FAQModal() {
             src={Close}
             alt=""
             className="absolute -top-[0px]  right-[10px] lg:left-[10px] cursor-pointer"
+            //@ts-ignore
             edge="start"
             color="inherit"
             onClick={handleClose}
