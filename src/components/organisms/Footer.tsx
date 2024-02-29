@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Logo, Instagram,Twitter,Facebook,LinkedIn } from "../atom/assets";
+import { Logo, Instagram,Twitter,LinkedIn } from "../atom/assets";
 import { MainLink } from "../moluecles";
 
 
@@ -13,7 +13,7 @@ export default function Footer() {
                 </a>
             </div>
             <div className="social flex  justify-center items-center gap-6 mb-6">
-                <a href=""><Image alt='' src={Facebook} className="w-[35px]"/></a>
+                {/* <a href=""><Image alt='' src={Facebook} className="w-[35px]"/></a> */}
                 <a href=""><Image alt='' src={Twitter} className="w-[26px] h-[22px]"/></a>
                 <a href=""><Image alt='' src={LinkedIn} className="w-[22px] h-[22px]"/></a>
                 <a href=""><Image alt='' src={Instagram} className="w-[35px]"/></a>  

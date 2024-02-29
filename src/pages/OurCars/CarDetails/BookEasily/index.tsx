@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import Image from 'next/image';
-import { Check1, Close, Email, Marker, Name, Telephone } from '@/components/atom/assets';
+import { Check1, Close, Email, Marker, Name } from '@/components/atom/assets';
 import { AccordionBox, PricingBox } from '@/components/moluecles';
 
 
@@ -75,7 +75,7 @@ export default function index() {
                                 <p className='font-medium text-[18px]'>Name:</p>
                                 <div className='w-full h-[44px] relative'>
                                     <input type="tel" className='w-full h-full px-4 outline-none border-none'/>
-                                    <Image src={Telephone} alt='' className='absolute top-1/2 -translate-y-1/2 right-[10px]'/>
+                                    {/* <Image src={Telephone} alt='' className='absolute top-1/2 -translate-y-1/2 right-[10px]'/> */}
                                 </div>
                             </div>
                         </div>
