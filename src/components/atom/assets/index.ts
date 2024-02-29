@@ -2,7 +2,7 @@ import Logo from './Logo.png';
 import Down from './down.png';
 import Kingdom from './kingdom.png';
 import LinkedIn from './LinkedIn.png';
-import Facebook from './facebook.svg';
+// import Facebook from './facebook.svg';
 import Twitter from './Twitter.png';
 import Instagram from './Instagram.svg';
 import Road from './Road.png';
@@ -13,7 +13,7 @@ import Garage from './car-garage 1.png';
 import CarsGroup from './png-transparent-ford-motor-company-car-schicker-ford-of-st-louis-sport-utility-vehicle-luxury-car-compact-car-car-luxury-car-removebg-preview 1.png';
 import BlackBackground from './Rectangle 26.png';
 import Offer from './Group 2030.png';
-import Suv from './Suv.png';
+// import Suv from './Suv.png';
 import Sports from './Sports.png';
 import Luxary from './Luxary.png';
 import Electric from './Electric.png';
@@ -100,7 +100,7 @@ import RedPlus from './redplus.png';
 import RedMinus from './redminus.png';
 import RightCheck from './RightCheck.png';
 import Marker from './marker.png';
-import Telephone from './telephone.png';
+// import Telephone from './telephone.png';
 import Name from './Name.png';
 import Email from './Email.png';
 import Carousel1 from './Carousel1.png';
@@ -112,7 +112,7 @@ export {
     Slide1,
     Slide2,
     Slide3,
-    Telephone,
+    // Telephone,
     Name,
     Email,
     Marker,
@@ -194,7 +194,7 @@ export {
     R3,
     R4,
     R5,
-    Suv,
+    // Suv,
     Sports,
     Luxary,
     Electric,
@@ -207,7 +207,7 @@ export {
     Kingdom,
     LinkedIn,
     Twitter,
-    Facebook,
+    // Facebook,
     Instagram,
     Road,
     ArrowRight,
