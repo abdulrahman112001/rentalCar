@@ -96,6 +96,7 @@ export default function MainCarousel() {
 
 
     <Swiper
+    //@ts-ignore
         onSwiper={thumbsSwiper}
         spaceBetween={10}
         slidesPerView={3}

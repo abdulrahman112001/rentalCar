@@ -19,7 +19,7 @@ export default function Navbar() {
     right: false,
   });
 
-  const toggleDrawer = (anchor: any, open: boolean) => (event) => {
+  const toggleDrawer = (anchor: any, open: boolean) => (event:any) => {
     if (
       event.type === 'keydown' &&
       (event.key === 'Tab' || event.key === 'Shift')
@@ -29,7 +29,7 @@ export default function Navbar() {
     setState({ ...state, [anchor]: open });
   };
 
-  const list = (anchor) => (
+  const list = (anchor:any) => (
     <Box
       sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
       role="presentation"
@@ -100,7 +100,10 @@ export default function Navbar() {
             </div>
 
             <Drawer
+            //@ts-ignore
               anchor={anchor}
+            //@ts-ignore
+
               open={state[anchor]}
               onClose={toggleDrawer(anchor, false)}
             >

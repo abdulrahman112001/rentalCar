@@ -55,6 +55,7 @@ export default function RequimentsModal() {
             src={Close}
             alt=""
             className="absolute -top-[0px]  right-[20px] lg:left-[10px] cursor-pointer"
+            //@ts-ignore
             edge="start"
             color="inherit"
             onClick={handleClose}
