@@ -1,8 +1,8 @@
+import Layout from "@/components/organisms/Layout";
 import "@/styles/globals.css";
+import { AppCacheProvider } from "@mui/material-nextjs/v13-pagesRouter";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import type { AppProps } from "next/app";
-import { Roboto } from "next/font/google";
-import { AppCacheProvider } from "@mui/material-nextjs/v13-pagesRouter";
 const theme = createTheme({
   typography: {
     // fontFamily: Roboto.style.fontFamily,
@@ -13,7 +13,9 @@ export default function App(props: AppProps) {
   return (
     <AppCacheProvider {...props}>
       <ThemeProvider theme={theme}>
-        <Component {...pageProps} />
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
       </ThemeProvider>
     </AppCacheProvider>
   );

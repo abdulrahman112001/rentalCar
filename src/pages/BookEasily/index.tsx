@@ -1,8 +1,7 @@
-import * as React from 'react';
 
+import { Check1, Email, Marker, Name } from '@/components/atom/assets';
+import { PricingBox } from '@/components/moluecles';
 import Image from 'next/image';
-import { Check1, Close, Email, Marker, Name } from '@/components/atom/assets';
-import { AccordionBox, PricingBox } from '@/components/moluecles';
 
 
 export default function index() {
