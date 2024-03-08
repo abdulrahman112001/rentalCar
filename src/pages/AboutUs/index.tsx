@@ -1,4 +1,3 @@
-import { Navbar } from '@/components/organisms'
 import { About } from '@/components/templates'
 import React from 'react'
 

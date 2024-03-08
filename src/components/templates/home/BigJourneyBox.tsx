@@ -1,6 +1,6 @@
 import React from 'react'
-import { JourneyBox } from '.'
-import { Diamond, Garage, Vector } from '../atom/assets'
+import { JourneyBox } from '../'
+import { Diamond, Garage, Vector } from '../../atom/assets'
 
 export default function BigJourneyBox() {
     return (

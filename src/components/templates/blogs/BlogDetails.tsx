@@ -1,6 +1,7 @@
 import React from 'react'
 import { Aa, CarDetails1, CarDetails2, Latest1, Latest2, Latest3, Latest4, Latest5, Minus, Plus, Rent, SmallFacebook, SmallInstagram, SmallShare, SmallTelegram, SmallTwitter, SmallWhatsapp, ToBack } from '@/components/atom/assets'
-import { ImageMention, LatestBox, MainButton, SearchBox } from '@/components/moluecles'
+import { SearchBox } from '@/components/moluecles'
+import { ImageMention, LatestBox } from '..'
 import Image from 'next/image'
 
 

@@ -9,17 +9,18 @@ import {
   Country,
   Petrol,
   SeeDetails,
-} from "../atom/assets";
+} from "../../atom/assets";
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
-import { PricingBox, StateBox } from ".";
+import { PricingBox } from "../../moluecles";
+import { StateBox } from "..";
 import Link from "next/link";
 
-export default function BestBox({
+export default function   BestBox({
   CarLogo,
   NavigationState,
   NewState,
@@ -54,7 +55,7 @@ export default function BestBox({
           className="mySwiper"
         >
           <SwiperSlide>
-            <Image src={Image1} alt="" className="w-full rounded-t-lg" />
+            <Image src={Image1} alt="" className="min-w-full rounded-t-lg" />
           </SwiperSlide>
           <SwiperSlide>
             <Image src={Image2} alt="" className="w-full rounded-t-lg" />

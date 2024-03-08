@@ -1,5 +1,6 @@
 import { Phone, WhatsApp, Telegram } from "@/components/atom/assets";
-import { ContactBox, MainHeading } from "@/components/moluecles";
+import { MainHeading } from "@/components/moluecles";
+import { ContactBox} from "../";
 import React from "react";
 
 export default function Contact() {

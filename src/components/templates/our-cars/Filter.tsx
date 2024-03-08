@@ -1,7 +1,8 @@
 import React from 'react'
-import { BrandAndModelBox, MainHeading, PriceBox } from '.'
+import { MainHeading} from '../../moluecles'
+import { BrandAndModelBox, PriceBox  } from '..'
 import Image from 'next/image'
-import { ArrowBottom, Location, LocationArea,ArrowBottomGreen } from '../atom/assets'
+import { ArrowBottom, Location, LocationArea,ArrowBottomGreen } from '../../atom/assets'
 
 //CheckBox
 
@@ -17,7 +18,7 @@ export default function Filter() {
 
 
     return (
-        <form>
+        <form >
             <div className="filter flex items-center justify-between mb-6">
                 <MainHeading heading='Filters' />
                 <input type="reset" value="Rest All" className='cursor-pointer font-medium text-[20px] leading-[25px] text-[#5EAB58]'/>

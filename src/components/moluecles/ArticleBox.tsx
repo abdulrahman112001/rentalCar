@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 export default function ArticleBox({ArticleImage,ArticleTitle,ArticleContent,date,link}:any) {
@@ -13,7 +14,7 @@ export default function ArticleBox({ArticleImage,ArticleTitle,ArticleContent,dat
                 <div>
                 <p className=' lg:text-[18px] leading-6 mb-5 font-normal'>
                 {ArticleContent}
-                <a href={link} className='text-[#3ea62b]'>Read More</a>
+                <Link href={link} className='text-[#3ea62b]'>Read More</Link>
                 </p>
                 </div>
 

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { TypeBox } from ".";
+import { TypeBox } from "../";
 import {
   Electric,
   HATCH,
@@ -8,7 +8,7 @@ import {
   Sedan,
   Sports,
   VAN,
-} from "../atom/assets";
+} from "../../atom/assets";
 
 export default function BigTypeBox() {
   return (

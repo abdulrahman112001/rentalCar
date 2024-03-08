@@ -5,8 +5,8 @@ import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
 import Image from 'next/image';
-import { RightCheck } from '../atom/assets';
-import ListTabBox from './ListTabBox';
+import { RightCheck } from '../../atom/assets';
+import {ListTabBox} from '../';
 
 export default function TabsBox() {
     const [value, setValue] = React.useState('1');

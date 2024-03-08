@@ -12,8 +12,8 @@ import 'swiper/css/thumbs';
 // import required modules
 import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
 import Image from 'next/image';
-import { Carousel1, RedCheck, Slide1, Slide2, Slide3 } from '../atom/assets';
-import { MainHeading, PricingBox } from '.';
+import { Carousel1, RedCheck, Slide1, Slide2, Slide3 } from '../../atom/assets';
+import {PricingBox } from '../../moluecles';
 import Link from 'next/link';
 
 export default function MainCarousel() {
@@ -110,12 +110,12 @@ export default function MainCarousel() {
             <Image alt='' src={Slide1} />
         </SwiperSlide>
         <SwiperSlide>
-        <SwiperSlide>
             <Image alt='' src={Slide2} />
         </SwiperSlide>
+        <SwiperSlide>
             <Image alt='' src={Slide3} />
         </SwiperSlide>
-        </Swiper>
+    </Swiper>
 
     </>
 );

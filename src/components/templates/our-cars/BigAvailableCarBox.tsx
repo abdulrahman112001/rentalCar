@@ -1,6 +1,6 @@
 import React from 'react'
-import { AvailableCarBox } from '.'
-import { BMW, Car1, Car2, Car3, Car4, Car5, Car6 } from '../atom/assets'
+import { AvailableCarBox } from '../'
+import { BMW, Car1, Car2, Car3, Car4, Car5, Car6 } from '../../atom/assets'
 
 export default function BigAvailableCarBox() {
     return (
@@ -27,7 +27,7 @@ export default function BigAvailableCarBox() {
                 CarCountry="Swedan"
                 CarBattery="Petrol"
                 Location= 'Location 123'
-                DetailsLink= '/OurCars/CarDetails'
+                DetailsLink= '/OurCars/1'
             />
             <AvailableCarBox
                 Image1={Car2}
@@ -51,7 +51,7 @@ export default function BigAvailableCarBox() {
                 CarCountry="Swedan"
                 CarBattery="Petrol"
                 Location= 'Location 123'
-                DetailsLink= '/OurCars/CarDetails'
+                DetailsLink= '/OurCars/1'
             />
             <AvailableCarBox
                 Image1={Car3}
@@ -75,7 +75,7 @@ export default function BigAvailableCarBox() {
                 CarCountry="Swedan"
                 CarBattery="Petrol"
                 Location= 'Location 123'
-                DetailsLink= '/OurCars/CarDetails'
+                DetailsLink= '/OurCars/1'
             />
             <AvailableCarBox
                 Image1={Car4}
@@ -99,7 +99,7 @@ export default function BigAvailableCarBox() {
                 CarCountry="Swedan"
                 CarBattery="Petrol"
                 Location= 'Location 123'
-                DetailsLink= '/OurCars/CarDetails'
+                DetailsLink= '/OurCars/1'
             />
             <AvailableCarBox
                 Image1={Car4}
@@ -123,7 +123,7 @@ export default function BigAvailableCarBox() {
                 CarCountry="Swedan"
                 CarBattery="Petrol"
                 Location= 'Location 123'
-                DetailsLink= '/OurCars/CarDetails'
+                DetailsLink= '/OurCars/1'
             />
             <AvailableCarBox
                 Image1={Car5}
@@ -147,7 +147,7 @@ export default function BigAvailableCarBox() {
                 CarCountry="Swedan"
                 CarBattery="Petrol"
                 Location= 'Location 123'
-                DetailsLink= '/OurCars/CarDetails'
+                DetailsLink= '/OurCars/1'
             />
             <AvailableCarBox
                 Image1={Car5}
@@ -171,7 +171,7 @@ export default function BigAvailableCarBox() {
                 CarCountry="Swedan"
                 CarBattery="Petrol"
                 Location= 'Location 123'
-                DetailsLink= '/OurCars/CarDetails'
+                DetailsLink= '/OurCars/1'
             />
             <AvailableCarBox
                 Image1={Car6}
@@ -195,7 +195,7 @@ export default function BigAvailableCarBox() {
                 CarCountry="Swedan"
                 CarBattery="Petrol"
                 Location= 'Location 123'
-                DetailsLink= '/OurCars/CarDetails'
+                DetailsLink= '/OurCars/1'
             />
             <AvailableCarBox
                 Image1={Car6}
@@ -219,7 +219,7 @@ export default function BigAvailableCarBox() {
                 CarCountry="Swedan"
                 CarBattery="Petrol"
                 Location= 'Location 123'
-                DetailsLink= '/OurCars/CarDetails'
+                DetailsLink= '/OurCars/1'
             />
         </div>
     )

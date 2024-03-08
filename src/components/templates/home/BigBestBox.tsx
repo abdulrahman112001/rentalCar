@@ -1,14 +1,14 @@
 import React from 'react'
-import { BestBox } from '.'
-import { BMW,Chuffar1,Chuffar2,Chuffar3,Chuffar4,Chuffar5} from '../atom/assets'
+import { BestBox } from '../'
+import { BMW, R1, R2, R3, R4, R5 } from '../../atom/assets'
 
-export default function BigChuffarBox() {
+export default function BigBestBox() {
     return (
         <div className="big-box flex flex-wrap justify-between gap-y-8 my-14">
             <BestBox
-                Image1={Chuffar1}
-                Image2={Chuffar1}
-                Image3={Chuffar1}
+                Image1={R2}
+                Image2={R2}
+                Image3={R2}
                 NewState={true}
                 SaleState={false}
                 NavigationState={false}
@@ -26,9 +26,9 @@ export default function BigChuffarBox() {
                 CarBattery="Petrol"
             />
             <BestBox
-                Image1={Chuffar2}
-                Image2={Chuffar2}
-                Image3={Chuffar2}
+                Image1={R1}
+                Image2={R1}
+                Image3={R1}
                 NewState={false}
                 SaleState={false}
                 NavigationState={false}
@@ -46,9 +46,9 @@ export default function BigChuffarBox() {
                 CarBattery="Petrol"
             />
             <BestBox
-                Image1={Chuffar3}
-                Image2={Chuffar3}
-                Image3={Chuffar3}
+                Image1={R4}
+                Image2={R4}
+                Image3={R4}
                 NewState={false}
                 SaleState={false}
                 NavigationState={true}
@@ -66,9 +66,9 @@ export default function BigChuffarBox() {
                 CarBattery="Petrol"
             />
             <BestBox
-                Image1={Chuffar3}
-                Image2={Chuffar3}
-                Image3={Chuffar3}
+                Image1={R3}
+                Image2={R3}
+                Image3={R3}
                 NewState={false}
                 SaleState={false}
                 NavigationState={true}
@@ -87,9 +87,9 @@ export default function BigChuffarBox() {
                 CarBattery="Petrol"
             />
             <BestBox
-                Image1={Chuffar4}
-                Image2={Chuffar4}
-                Image3={Chuffar4}
+                Image1={R4}
+                Image2={R4}
+                Image3={R4}
                 NewState={false}
                 SaleState={true}
                 NavigationState={false}
@@ -107,9 +107,9 @@ export default function BigChuffarBox() {
                 CarBattery="Petrol"
             />
             <BestBox
-                Image1={Chuffar5}
-                Image2={Chuffar5}
-                Image3={Chuffar5}
+                Image1={R5}
+                Image2={R5}
+                Image3={R5}
                 NewState={false}
                 SaleState={false}
                 NavigationState={false}

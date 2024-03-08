@@ -8,8 +8,8 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
 import Image from 'next/image';
-import { BMW } from '../atom/assets';
-import QuantityInput from './QuantityInput';
+import { BMW } from '../../atom/assets';
+import {QuantityInput} from '..';
 
 
 //Number Input 

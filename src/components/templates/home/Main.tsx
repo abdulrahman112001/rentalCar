@@ -1,18 +1,21 @@
 import Image from "next/image";
 import React from "react";
 import {
-  BigArticleBox,
+  MainButton,
+  MainHeading,
+} from "@/components/moluecles";
+import {
   BigBestBox,
-  BigChuffarBox,
+  BigChauffeurBox,
   BigJourneyBox,
   BigTypeBox,
   Introduction,
-  MainButton,
   MainCarousel,
-  MainHeading,
-} from "@/components/moluecles";
+  BigReviewBox,
+  BigArticleBox,
+
+} from "../";
 import { BlackBackground, CarsGroup, Offer } from "@/components/atom/assets";
-import BigReviewBox from "@/components/moluecles/BigReviewBox";
 export default function Main() {
   return (
     <>
@@ -54,13 +57,13 @@ export default function Main() {
           <MainHeading heading="BEST CARS" />
         </div>
         <BigBestBox />
-        <MainButton title="ALL CARS" link="/BEST CARS" />
+        <MainButton title="ALL CARS" link="/OurCars" />
       </div>
       <div className="chuffars container mx-auto my-24 px-5">
         <div className="text-center">
           <MainHeading heading="CAR & CHUFFAR" />
         </div>
-        <BigChuffarBox />
+        <BigChauffeurBox />
         <MainButton title="ALL CARS" link="/OurCars" />
       </div>
       <div className="articles container mx-auto my-24 px-5">

@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { New,Sale,Door,Size,Econm,Chair,Country,Petrol,SeeDetails, LocationImage  } from '../atom/assets'
+import { New,Sale,Door,Size,Econm,Chair,Country,Petrol,SeeDetails, LocationImage  } from '../../atom/assets'
 
 
 import React, { useRef, useState } from 'react';
@@ -13,10 +13,11 @@ import 'swiper/css/navigation';
 
 // import required modules
 import { Pagination, Navigation } from 'swiper/modules';
-import { AvailableStateBox, PricingBox } from '.';
+import { PricingBox } from '../../moluecles';
+import { AvailableStateBox } from '../';
 
-
-export default function     AvailableCarBox({DetailsLink,Location,TwoDayOffer,TwoDayPrice,CarLogo,NavigationState,NewState,SaleState,Image1,Image2,Image3,title,WeekPrice,DayPrice,WeekOffer,DayOffer,CarDoors,CarTank,CarEconm,CarSeat,CarCountry,CarBattery}:any) {
+import Link from 'next/link';
+export default function AvailableCarBox({DetailsLink,Location,TwoDayOffer,TwoDayPrice,CarLogo,NavigationState,NewState,SaleState,Image1,Image2,Image3,title,WeekPrice,DayPrice,WeekOffer,DayOffer,CarDoors,CarTank,CarEconm,CarSeat,CarCountry,CarBattery}:any) {
     return (
         <div className="group best-box w-full shadow-lg rounded-t-lg flex flex-col lg:flex-row min-h-[280px]">
             <div className="carousel w-full relative  lg:max-w-[300px]  self-stretch h-[280px]">
@@ -43,8 +44,8 @@ export default function     AvailableCarBox({DetailsLink,Location,TwoDayOffer,Tw
                 <h2 className=' font-medium text-[26px] leading-7 mb-5'>{title}</h2>
                 <div className='relative'>
                     <div className='group-hover:invisible lg:group-hover:hidden flex flex-col md:flex-row gap-10 lg:gap-0  '>
-                            <div className='flex flex-col w-[280px] '>
-                                <div className='mb-4 lg:mb-14 flex flex-wrap gap-x-2 md:gap-x-6 gap-y-3'>
+                            <div className='flex flex-col lg:w-[280px] '>
+                                <div className='mb-4 lg:mb-14 flex justify-between flex-wrap gap-x-2 md:gap-x-6 gap-y-4'>
                                     <AvailableStateBox image={Door} state={CarDoors} />
                                     <AvailableStateBox image={Size} state={CarTank} />
                                     <AvailableStateBox image={Econm} state={CarEconm} />
@@ -71,7 +72,7 @@ export default function     AvailableCarBox({DetailsLink,Location,TwoDayOffer,Tw
                         <PricingBox Offer={TwoDayOffer} Price={TwoDayPrice} Time=' /2 Days' />
                         <div className='w-full flex flex-col items-end '>
                             <p className='text-[#62c05b] mt-10 mb-5'>Free Cancelation</p>
-                            <a href={DetailsLink} className='' ><Image src={SeeDetails} alt='' /></a>
+                            <Link href={DetailsLink} className='' ><Image src={SeeDetails} alt='' /></Link>
                         </div>
                     </div>
                 </div>

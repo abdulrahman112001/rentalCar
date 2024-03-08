@@ -15,20 +15,20 @@ import {
   ToForward
 } from "@/components/atom/assets";
 import {
-  FAQModal,
   PricingBox,
-  RequimentsModal,
   SearchBox,
-  SpecificationBox
 } from "@/components/moluecles";
+
+import { RequirementsModal, FAQModal, SpecificationBox } from "..";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function CarDetails() {
   return (
     <div className="car-details container mx-auto  my-12 relative ">
-      <a href="">
+      <Link href="/">
         <Image src={ToBack} alt="" className="absolute -top-[0] left-[10px]" />
-      </a>
+      </Link>
       <div className="top mb-8 px-5">
         <h2 className=" font-medium text-[24px] lg:text-[28px] pl-[45px] mb-10">
           Rent Rolls Royce Cullinan Mansory 2023 in Dubai
@@ -58,7 +58,7 @@ export default function CarDetails() {
             is required. Contact Luxury Supercar Rentals directly for bookings
             and inquiries...
           </p>
-          <div className="specification flex  gap-6  flex-wrap my-10">
+          <div className="specification flex justify-between md:justify-start  gap-6  flex-wrap my-10">
             <SpecificationBox image={RedDoor} description="4 Door" />
             <SpecificationBox image={CarInsurance} description="Swedan" />
             <SpecificationBox image={MoneyDollar} description="Econm" />
@@ -116,16 +116,15 @@ export default function CarDetails() {
           </div>
           <SearchBox
             TitleButton="Check Availability"
-            link="/OurCars/CarDetails/BookEasily"
           />
           <ul className=" flex flex-col gap-2">
-            <li className="text-[18px] lg:text-[20px] font-medium text-[#666666]">
+            <li className="text-[16px] lg:text-[20px] font-medium text-[#666666]">
               <span>1.</span> 1 Day Rental Available
             </li>
-            <li className="text-[18px] lg:text-[20px] font-medium text-[#666666]">
+            <li className="text-[16px] lg:text-[20px] font-medium text-[#666666]">
               <span>2.</span> Deposit: AED 300
             </li>
-            <li className="text-[18px] lg:text-[20px] font-medium text-[#666666]">
+            <li className="text-[16px] lg:text-[20px] font-medium text-[#666666]">
               <span>3.</span> 500 km max
             </li>
           </ul>
@@ -136,11 +135,11 @@ export default function CarDetails() {
           <span className="font-medium text-[22px] lg:text-[24px]">
             Supplier Details{" "}
           </span>
-          <a href="">
+          <Link href="/">
             <Image src={ToForward} alt="" />
-          </a>
+          </Link>
         </div>
-        <RequimentsModal />
+        <RequirementsModal />
         <FAQModal />
       </div>
     </div>

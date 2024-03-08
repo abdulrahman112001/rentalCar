@@ -1,7 +1,7 @@
 import React from 'react'
-import { ArrowRight, Road } from '../atom/assets'
+import {Road } from '../../atom/assets'
 import Image from 'next/image'
-import { MainButton } from '.'
+import { MainButton } from '../../moluecles'
 
 export default function Introduction() {
     return (

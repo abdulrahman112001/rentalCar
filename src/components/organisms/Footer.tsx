@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Logo, Instagram,Twitter,LinkedIn } from "../atom/assets";
 import { MainLink } from "../moluecles";
+import Link from "next/link";
 
 
 
@@ -19,35 +20,52 @@ export default function Footer() {
                 <a href=""><Image alt='' src={Instagram} className="w-[35px]"/></a>  
             </div>
             <div className="links flex flex-col md:flex-row gap-16 items-center justify-center mb-6">
-                <div className="flex  flex-col text-center gap-3">
-                    <MainLink link="Blogs">Blogs</MainLink>
-                    <span>title</span>
-                    <span>title</span>
-                    <span>title</span>
+                <div className="flex md:flex-col flex-wrap text-center gap-3 w-full md:w-auto ">
+                    <div className="w-full">
+                        <MainLink link="Blogs">Blogs</MainLink>
+                    </div>
+                    <Link href='' className="w-[46%] md:w-auto">title</Link>
+                    <Link href='' className="w-[46%] md:w-auto">title</Link>
+                    <Link href='' className="w-[46%] md:w-auto">title</Link>
+                    <Link href='' className="w-[46%] md:w-auto">title</Link>
                 </div>
-                <div className="flex  flex-col text-center gap-3">
-                <MainLink link="OurCars">Our Cars</MainLink>
-                    <span>title</span>
-                    <span>title</span>
-                    <span>title</span>
+                <div className="flex md:flex-col flex-wrap text-center gap-3 w-full md:w-auto">
+                    <div className="w-full">
+                        <MainLink link="OurCars">Our Cars</MainLink>
+                    </div>
+                    <Link href='' className="w-[46%] md:w-auto">title</Link>
+                    <Link href='' className="w-[46%] md:w-auto">title</Link>
+                    <Link href='' className="w-[46%] md:w-auto">title</Link>
+                    <Link href='' className="w-[46%] md:w-auto">title</Link>
+
                 </div>
-                <div className="flex  flex-col text-center gap-3">
-                    <MainLink link="/">Home</MainLink>
-                    <span>title</span>
-                    <span>title</span>
-                    <span>title</span>
+                <div className="flex  md:flex-col flex-wrap text-center gap-3 w-full md:w-auto">
+                    <div className="w-full">
+                        <MainLink link="/">Home</MainLink>
+                    </div>
+                    <Link href='' className="w-[46%] md:w-auto">title</Link>
+                    <Link href='' className="w-[46%] md:w-auto">title</Link>
+                    <Link href='' className="w-[46%] md:w-auto">title</Link>
+                    <Link href='' className="w-[46%] md:w-auto">title</Link>
                 </div>
-                <div className="flex  flex-col text-center gap-3">
-                    <MainLink link="ContactUs">Contact us</MainLink>
-                    <span>title</span>
-                    <span>title</span>
-                    <span>title</span>
+                <div className="flex  md:flex-col flex-wrap text-center gap-3 w-full md:w-auto">
+                    <div className="w-full">
+                        <MainLink link="ContactUs">Contact us</MainLink>
+                    </div>
+                    <Link href='' className="w-[46%] md:w-auto">title</Link>
+                    <Link href='' className="w-[46%] md:w-auto">title</Link>
+                    <Link href='' className="w-[46%] md:w-auto">title</Link>
+                    <Link href='' className="w-[46%] md:w-auto">title</Link>
                 </div>
-                <div className="flex  flex-col text-center gap-3">
-                    <MainLink link="AboutUs">About us</MainLink>
-                    <span>title</span>
-                    <span>title</span>
-                    <span>title</span>
+                <div className="flex  md:flex-col flex-wrap text-center gap-3 w-full md:w-auto">
+                    <div className="w-full">
+                        <MainLink link="AboutUs">About us</MainLink>
+                    </div>
+                    <Link href='' className="w-[46%] md:w-auto">title</Link>
+                    <Link href='' className="w-[46%] md:w-auto">title</Link>
+                    <Link href='' className="w-[46%] md:w-auto">title</Link>
+                    <Link href='' className="w-[46%] md:w-auto">title</Link>
+
                 </div>
             </div>
         </div>

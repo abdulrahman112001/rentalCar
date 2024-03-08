@@ -1,6 +1,6 @@
 import React from 'react'
-import { ReviewBox } from '.'
-import { Person1, Person2, Review1, Review2, Review3 } from '../atom/assets'
+import { ReviewBox } from '../'
+import { Person1, Person2, Review1, Review2, Review3 } from '../../atom/assets'
 
 export default function BigReviewBox() {
     return (

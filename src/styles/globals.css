@@ -66,10 +66,24 @@ body {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
+@media (max-width: 1023px) {
+    .main-carousel .swiper-button-next:after,
+    .main-carousel .swiper-button-prev:after {
+        font-size: 15px !important;
+        min-width: 30px;
+        height: 30px;
+    }
+}
 .main-carousel .swiper-backface-hidden .swiper-slide {
     display: flex;
     justify-content: center;
 }
+
+.main-carousel .swiper-wrapper {
+    justify-content: space-between;
+}
+
+
 
 
 
