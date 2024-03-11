@@ -12,18 +12,18 @@ import {
   RedCheck,
   RedDoor,
   ToBack,
-  ToForward
+  ToForward,
 } from "@/components/atom/assets";
-import {
-  PricingBox,
-  SearchBox,
-} from "@/components/moluecles";
+import { PricingBox, SearchBox } from "@/components/moluecles";
 
 import { RequirementsModal, FAQModal, SpecificationBox } from "..";
 import Image from "next/image";
 import Link from "next/link";
+import ModalComp from "@/components/moluecles/Modal";
+import { useState } from "react";
 
 export default function CarDetails() {
+  const [openModal, setOPenModal] = useState(false);
   return (
     <div className="car-details container mx-auto  my-12 relative ">
       <Link href="/">
@@ -116,6 +116,7 @@ export default function CarDetails() {
           </div>
           <SearchBox
             TitleButton="Check Availability"
+            action={() => setOPenModal(true)}
           />
           <ul className=" flex flex-col gap-2">
             <li className="text-[16px] lg:text-[20px] font-medium text-[#666666]">
@@ -142,6 +143,11 @@ export default function CarDetails() {
         <RequirementsModal />
         <FAQModal />
       </div>
+      <ModalComp
+        open={openModal}
+        onClose={() => setOPenModal(false)}
+        Children={"test"}
+      />
     </div>
   );
 }

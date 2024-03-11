@@ -1,16 +1,10 @@
-import React from 'react'
-import { MainHeading} from '../../moluecles'
-import { BrandAndModelBox, PriceBox  } from '..'
 import Image from 'next/image'
-import { ArrowBottom, Location, LocationArea,ArrowBottomGreen } from '../../atom/assets'
-
-//CheckBox
-
-// import * as React from 'react';
-import FormGroup from '@mui/material/FormGroup';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import Checkbox from '@mui/material/Checkbox';
-import { red } from '@mui/material/colors';
+import { BrandAndModelBox, PriceBox } from '..'
+import { ArrowBottom, ArrowBottomGreen, Location, LocationArea } from '../../atom/assets'
+import { MainHeading } from '../../moluecles'
+import Checkbox from '@mui/material/Checkbox'
+import FormControlLabel from '@mui/material/FormControlLabel'
+import FormGroup from '@mui/material/FormGroup'
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
 
