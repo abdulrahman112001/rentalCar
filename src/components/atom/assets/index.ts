@@ -100,7 +100,7 @@ import RedPlus from './redplus.png';
 import RedMinus from './redminus.png';
 import RightCheck from './RightCheck.png';
 import Marker from './marker.png';
-// import Telephone from './telephone.png';
+import Telephone from './telephone.png';
 import Name from './Name.png';
 import Email from './Email.png';
 import Carousel1 from './Carousel1.png';
@@ -109,6 +109,7 @@ import Slide2 from './Slide2.png';
 import Slide3 from './Slide3.png';
 import Emirates from './emirates.svg'
 export {
+    Telephone,
     Emirates,   
     Carousel1,
     Slide1,

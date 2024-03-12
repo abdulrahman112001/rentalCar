@@ -40,6 +40,7 @@ export {default as RequirementsModal} from './our-cars/RequirementsModal'
 export {default as TabsBox} from './our-cars/TabsBox'
 export {default as ListTabBox} from './our-cars/ListTabBox'
 export {default as SpecificationBox} from './our-cars/SpecificationBox'
+export {default as BookEasily} from './our-cars/BookEasily'
 
 
 // Blogs

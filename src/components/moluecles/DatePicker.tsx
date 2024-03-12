@@ -4,8 +4,9 @@ import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { DatePicker as MainDatePicker } from "@mui/x-date-pickers/DatePicker";
 function DatePicker() {
   return (
+    
     <LocalizationProvider dateAdapter={AdapterDayjs}>
-      <MainDatePicker />
+      <MainDatePicker  />
     </LocalizationProvider>
   );
 }

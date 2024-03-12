@@ -32,7 +32,7 @@ export default function MainCarousel() {
 
             <SwiperSlide>
                 <div className='flex gap-10 flex-wrap px-10 items-center justify-center mb-10'>
-                    <Image  src={Carousel1} alt='' className='lg:max-w-[500px]'/>
+                    <Image  src={Carousel1} alt='' className='min-w-[180px] lg:max-w-[500px]'/>
                     <div className='flex-grow hidden lg:block'>
                         <h2 className=" font-medium text-[32px] md:text-[48px]  text-[#D5281D] ">BMW 530i</h2>
                         <span className='text-[24px] font-medium leading-[30px] mb-6 block text-[#666666]'>(2019)</span>
@@ -52,7 +52,7 @@ export default function MainCarousel() {
             </SwiperSlide>
             <SwiperSlide>
                 <div className='flex gap-10 flex-wrap px-10 items-center justify-center mb-10'>
-                    <Image  src={Carousel1} alt='' className='lg:max-w-[500px]'/>
+                    <Image  src={Carousel1} alt='' className='min-w-[180px] lg:max-w-[500px]'/>
                     <div className='flex-grow hidden lg:block'>
                         <h2 className=" font-medium text-[32px] md:text-[48px]  text-[#D5281D] ">BMW 530i</h2>
                         <span className='text-[24px] font-medium leading-[30px] mb-6 block text-[#666666]'>(2019)</span>
@@ -72,7 +72,7 @@ export default function MainCarousel() {
             </SwiperSlide>
             <SwiperSlide>
                 <div className='flex gap-10 flex-wrap px-10 items-center justify-center mb-10'>
-                    <Image  src={Carousel1} alt='' className='lg:max-w-[500px]'/>
+                    <Image  src={Carousel1} alt='' className='min-w-[180px] lg:max-w-[500px]'/>
                     <div className='flex-grow hidden lg:block'>
                         <h2 className=" font-medium text-[32px] md:text-[48px]  text-[#D5281D] ">BMW 530i</h2>
                         <span className='text-[24px] font-medium leading-[30px] mb-6 block text-[#666666]'>(2019)</span>

@@ -16,7 +16,7 @@ import {
 } from "@/components/atom/assets";
 import { PricingBox, SearchBox } from "@/components/moluecles";
 
-import { RequirementsModal, FAQModal, SpecificationBox } from "..";
+import { RequirementsModal, FAQModal, SpecificationBox, BookEasily } from "..";
 import Image from "next/image";
 import Link from "next/link";
 import ModalComp from "@/components/moluecles/Modal";
@@ -35,13 +35,13 @@ export default function CarDetails() {
         </h2>
         <div className="car-check lg:h-[300px] flex gap-3  flex-col lg:flex-row">
           <Image src={Check1} alt="" className="flex-grow w-full lg:w-auto" />
-          <Image src={Check2} alt="" className="flex-grow w-full lg:w-auto" />
+          <Image src={Check2} alt="" className="flex-grow w-[0] lg:w-auto" />
           <div className=" flex flex-col gap-3">
-            <Image src={Check3} alt="" className="flex-grow w-full lg:w-auto" />
-            <Image src={Check4} alt="" className="flex-grow w-full lg:w-auto" />
+            <Image src={Check3} alt="" className="flex-grow w-[0] lg:w-[220px]" />
+            <Image src={Check4} alt="" className="flex-grow w-[0] lg:w-[220px]" />
           </div>
           <div>
-            <Image src={Check5} alt="" className="flex-grow w-full lg:w-auto" />
+            <Image src={Check5} alt="" className="flex-grow w-[0] lg:w-[280px] h-full" />
           </div>
         </div>
       </div>
@@ -129,6 +129,11 @@ export default function CarDetails() {
               <span>3.</span> 500 km max
             </li>
           </ul>
+          <ModalComp
+            open={openModal}
+            onClose={() => setOPenModal(false)}
+            Children={<BookEasily />}
+          />
         </div>
       </div>
       <div className="bottom flex flex-col px-5 mb-32 gap-5">
@@ -140,14 +145,11 @@ export default function CarDetails() {
             <Image src={ToForward} alt="" />
           </Link>
         </div>
+
         <RequirementsModal />
         <FAQModal />
       </div>
-      <ModalComp
-        open={openModal}
-        onClose={() => setOPenModal(false)}
-        Children={"test"}
-      />
+
     </div>
   );
 }

@@ -1,4 +1,13 @@
-import React from 'react'
+import * as React from 'react';
+import Box from '@mui/material/Box';
+import Drawer from '@mui/material/Drawer';
+import Button from '@mui/material/Button';
+import List from '@mui/material/List';
+
+
+type Anchor = 'top' | 'left' | 'bottom' | 'right';
+
+
 import { MainHeading } from '../../moluecles'
 import { BrandAndModelBox, PriceBox } from '..'
 import Image from 'next/image'
@@ -7,7 +16,6 @@ import { ArrowBottom, Location, LocationArea,ArrowBottomGreen } from '../../atom
 
 //CheckBox
 
-// import * as React from 'react';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
@@ -15,29 +23,45 @@ import { red } from '@mui/material/colors';
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
 
-// import * as React from 'react';
-import Box from '@mui/material/Box';
-import Drawer from '@mui/material/Drawer';
-import Button from '@mui/material/Button';
-import List from '@mui/material/List';
 import CloseIcon from '@mui/icons-material/Close';
 
 
 import { FaGear } from "react-icons/fa6";
 
+
+
+
 export default function DrawerFilter() {
-    const [open, setOpen] = React.useState(false);
+    const [state, setState] = React.useState({
+        top: false,
+        left: false,
+        bottom: false,
+        right: false,
+    });
 
-    const toggleDrawer = (newOpen: boolean) => () => {
-        setOpen(newOpen);
-    };
+    const toggleDrawer =
+        (anchor: Anchor, open: boolean) =>
+        (event: React.KeyboardEvent | React.MouseEvent) => {
+        if (
+            event.type === 'keydown' &&
+            ((event as React.KeyboardEvent).key === 'Tab' ||
+            (event as React.KeyboardEvent).key === 'Shift')
+        ) {
+            return;
+        }
 
-    
+        setState({ ...state, [anchor]: open });
+        };
 
-    const DrawerList = (
-        <Box  sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)} >
+    const list = (anchor: Anchor) => (
+        <Box
+        sx={{ height: anchor === 'top' || anchor === 'bottom' ? 'auto' : 1000 }}
+        role="presentation"
+        onClick={toggleDrawer(anchor, false)}
+        onKeyDown={toggleDrawer(anchor, false)}
+        >
             <div className="text-right p-2">
-                <CloseIcon className=" cursor-pointer text-[25px] text-[#333]"  onClick={toggleDrawer(false)}/>
+                <CloseIcon className=" cursor-pointer text-[25px] text-[#333]"  onClick={toggleDrawer(anchor,false)}/>
             </div>  
             <List className='p-4'>
                 <form >
@@ -132,12 +156,28 @@ export default function DrawerFilter() {
             </List>
         </Box>
     );
+
     return (
-        <div className="drawer-filter block lg:hidden">
-            <Button className=' absolute left-0' onClick={toggleDrawer(true)}><FaGear /></Button>
-            <Drawer open={open} onClose={toggleDrawer(false)}>
-                {DrawerList}
-            </Drawer>   
+        <div>
+            {(['bottom'] as const).map((anchor) => (
+                <React.Fragment key={anchor}>
+                <div className=" block xl:hidden">
+
+                    <Button className='  flex justify-start text-[20px] normal-case font-semibold w-full' onClick={toggleDrawer(anchor, true)}>
+                        <span className='flex items-center  gap-2 w-auto'>
+                            <FaGear />  Filter 
+                        </span>
+                    </Button>
+                </div>
+                <Drawer
+                    anchor={anchor}
+                    open={state[anchor]}
+                    onClose={toggleDrawer(anchor, false)}
+                >
+                    {list(anchor)}
+                </Drawer>
+                </React.Fragment>
+            ))}
         </div>
-    )
+    );
 }

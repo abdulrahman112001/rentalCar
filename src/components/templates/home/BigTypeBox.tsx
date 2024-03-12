@@ -20,14 +20,13 @@ export default function BigTypeBox() {
         </span>
       </div> */}
       <TypeBox image={HATCH} type="HATCH Back" />
-      <TypeBox image={Sports} type="Sports" />
       <TypeBox image={Luxary} type="Luxary" />
       <TypeBox image={Electric} type="Electric" />
       <TypeBox image={VAN} type="VAN" />
       <TypeBox image={JEEP} type="JEEP" />
       <TypeBox image={Sedan} type="Sedan" />
+      <TypeBox image={Sports} type="Sports" />
       <TypeBox image={Electric} type="Electric" />
-
     </div>
   );
 }

@@ -66,7 +66,7 @@ export default function Navbar() {
 
   return (
     <div className=" bg-[#F3EFEF]">
-      <div className="hidden md:flex  navbar h-[100px] gap-0 md:gap-4  lg:gap-10 items-center justify-center pl-10 ">
+      <div className="hidden md:flex  navbar h-[70px] gap-0 md:gap-4  lg:gap-10 items-center justify-center pl-10 ">
         <div className="left flex gap-9">
           <MainLink link="Blogs">Blogs</MainLink>
           <MainLink link="OurCars">Our Cars</MainLink>
