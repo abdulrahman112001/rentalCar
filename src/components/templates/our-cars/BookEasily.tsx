@@ -1,5 +1,5 @@
 
-import { Check1, Email, Marker, Name , Telephone } from '@/components/atom/assets';
+import { Check1, Email, Marker, Name  } from '@/components/atom/assets';
 import { PricingBox } from '@/components/moluecles';
 import Image from 'next/image';
 
@@ -74,7 +74,7 @@ export default function index() {
                                 <p className='font-medium text-[18px]'>Phone:</p>
                                 <div className='w-full h-[44px] relative'>
                                     <input type="tel" className='w-full h-full px-4 outline-none border-none'/>
-                                    <Image src={Telephone} alt='' className='absolute top-1/2 -translate-y-1/2 right-[10px]'/>
+                                    {/* <Image src={Telephone} alt='' className='absolute top-1/2 -translate-y-1/2 right-[10px]'/> */}
                                 </div>
                             </div>
                         </div>
