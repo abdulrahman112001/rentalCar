@@ -109,7 +109,7 @@ import Slide2 from './Slide2.png';
 import Slide3 from './Slide3.png';
 import Emirates from './emirates.svg'
 export {
-    Telephone,
+    // Telephone,
     Emirates,   
     Carousel1,
     Slide1,
