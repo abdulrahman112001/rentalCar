@@ -11,7 +11,7 @@ type Anchor = 'top' | 'left' | 'bottom' | 'right';
 import { MainHeading } from '../../moluecles'
 import { BrandAndModelBox, PriceBox } from '..'
 import Image from 'next/image'
-import { ArrowBottom, Location, LocationArea,ArrowBottomGreen } from '../../atom/assets'
+import { ArrowBottom, Location, LocationArea,ArrowBottomGreen, FilterIcon } from '../../atom/assets'
 
 
 //CheckBox
@@ -26,7 +26,7 @@ const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 import CloseIcon from '@mui/icons-material/Close';
 
 
-import { FaGear } from "react-icons/fa6";
+import { FaFilter } from "react-icons/fa";
 
 
 
@@ -158,14 +158,17 @@ export default function DrawerFilter() {
     );
 
     return (
-        <div>
+        <div className='w-full'>
             {(['bottom'] as const).map((anchor) => (
                 <React.Fragment key={anchor}>
-                <div className=" block xl:hidden">
+                <div className=" block xl:hidden w-full px-3">
 
-                    <Button className='  flex justify-start text-[20px] normal-case font-semibold w-full' onClick={toggleDrawer(anchor, true)}>
-                        <span className='flex items-center  gap-2 w-auto'>
-                            <FaGear />  Filter 
+                    <Button className='  flex justify-between text-white text-[20px] normal-case font-semibold w-full' onClick={toggleDrawer(anchor, true)}>
+                        <span className=''>
+                            Filter   
+                        </span>
+                        <span>
+                            <FaFilter />
                         </span>
                     </Button>
                 </div>

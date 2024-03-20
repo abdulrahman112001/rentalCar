@@ -2,6 +2,7 @@
 import { Check1, Email, Marker, Name , Telephone } from '@/components/atom/assets';
 import { PricingBox } from '@/components/moluecles';
 import Image from 'next/image';
+import Link from 'next/link';
 
 
 export default function index() {
@@ -78,8 +79,11 @@ export default function index() {
                                 </div>
                             </div>
                         </div>
-                        <div className='flex justify-center '>
-                            <input type="submit" value="Submit" className=' cursor-pointer rounded-lg py-2 px-6 bg-[#1E1E1E] text-white h-[44px] w-[280px] ' />
+                        <div className='flex gap-3 '>
+                            <input type="submit" value="Submit" className=' cursor-pointer rounded py-2 px-6 bg-[#1E1E1E] text-white h-[44px] w-[280px] ' />
+                            <button className='cursor-pointer rounded py-2 px-6 bg-[#5EAB58] text-white h-[44px] w-[280px] '>
+                                <Link href='' >Whatsapp</Link>
+                            </button>
                         </div>
                     </form>
                 </div>

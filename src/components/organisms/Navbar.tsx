@@ -1,5 +1,5 @@
 import { Languages, MainLink } from '@/components/moluecles';
-import { Logo } from '@/components/atom/assets/';
+import { Logo, TabNavbar } from '@/components/atom/assets/';
 import Image from 'next/image';
 import * as React from 'react';
 import Box from '@mui/material/Box';
@@ -36,15 +36,15 @@ export default function Navbar() {
       role="presentation"
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <div className="text-right p-2">
+      <div className=" p-2 flex items-center justify-between">
+        <div className="image">
+            <Link href="/">
+              <Image src={Logo} alt="" className="w-[120px]" />
+            </Link>
+        </div>
         <CloseIcon className=" cursor-pointer text-[25px] text-[#333]"  onClick={toggleDrawer(anchor, false)}/>
       </div>
-      <List className="flex gap-3">
-        <div className="image">
-          <Link href="/">
-            <Image src={Logo} alt="" className="w-[120px]" />
-          </Link>
-        </div>
+      <List className="p-0">
         <Languages />
       </List>
       <List>
@@ -86,18 +86,20 @@ export default function Navbar() {
       <div className="md:hidden  ">
         {['left'].map((anchor) => (
           <React.Fragment key={anchor}>
-            <div className='flex justify-between w-full'>
-            <Button
-              onClick={toggleDrawer(anchor, true)}
-              className=" text-[#979393] "
-            >
-              <MenuIcon className='text-[30px]'/>
-            </Button>
+            <div className='flex justify-between w-full h-[60px] items-center'>
             <div className="image">
                 <a href="">
                   <Image src={Logo} alt="" className="w-[120px]" />
                 </a>
               </div>
+            <Button
+              onClick={toggleDrawer(anchor, true)}
+              className=" text-[#979393] "
+            >
+              <Image src={TabNavbar} alt="" />
+              
+            </Button>
+            
             </div>
 
             <Drawer

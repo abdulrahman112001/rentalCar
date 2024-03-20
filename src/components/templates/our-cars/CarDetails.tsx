@@ -22,18 +22,49 @@ import Link from "next/link";
 import ModalComp from "@/components/moluecles/Modal";
 import { useState } from "react";
 
+//Swiper
+import  { useRef } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+
+// import required modules
+import { Pagination } from 'swiper/modules';
+
+
 export default function CarDetails() {
   const [openModal, setOPenModal] = useState(false);
   return (
     <div className="car-details container mx-auto  my-12 relative ">
       <Link href="/">
-        <Image src={ToBack} alt="" className="absolute -top-[0] left-[10px]" />
+        <Image src={ToBack} alt="" className="absolute top-[15px] left-[20px]" />
       </Link>
       <div className="top mb-8 px-5">
-        <h2 className=" font-medium text-[24px] lg:text-[28px] pl-[45px] mb-10">
+        <h2 className=" font-medium text-[24px] lg:text-[28px] pl-[30px] mb-10">
           Rent Rolls Royce Cullinan Mansory 2023 in Dubai
         </h2>
-        <div className="car-check lg:h-[300px] flex gap-3  flex-col lg:flex-row">
+        <div className="swiper-car lg:hidden">
+          <Swiper
+          spaceBetween={30}
+          loop={true}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Pagination]}
+          className="mySwiper"
+        >
+            <SwiperSlide><Image src={Check1} alt="" className="w-full max-h-[300px] " /></SwiperSlide>
+            <SwiperSlide><Image src={Check1} alt="" className="w-full max-h-[300px] " /></SwiperSlide>
+            <SwiperSlide><Image src={Check1} alt="" className="w-full max-h-[300px] " /></SwiperSlide>
+            <SwiperSlide><Image src={Check1} alt="" className="w-full max-h-[300px] " /></SwiperSlide>
+
+          </Swiper>
+        </div>
+        <div className="car-check lg:h-[300px] hidden lg:flex gap-3  flex-col lg:flex-row">
           <Image src={Check1} alt="" className="flex-grow w-full lg:w-auto" />
           <Image src={Check2} alt="" className="flex-grow w-[0] lg:w-auto" />
           <div className=" flex flex-col gap-3">
@@ -58,7 +89,7 @@ export default function CarDetails() {
             is required. Contact Luxury Supercar Rentals directly for bookings
             and inquiries...
           </p>
-          <div className="specification flex justify-between md:justify-start  gap-6  flex-wrap my-10">
+          <div className="specification flex justify-between md:justify-start  gap-2 lg:gap-6  flex-wrap my-10">
             <SpecificationBox image={RedDoor} description="4 Door" />
             <SpecificationBox image={CarInsurance} description="Swedan" />
             <SpecificationBox image={MoneyDollar} description="Econm" />
@@ -71,37 +102,37 @@ export default function CarDetails() {
               Highlights
             </h2>
             <ul className="flex flex-wrap gap-x-10 gap-y-4">
-              <li className="flex gap-4 lg:w-[40%]">
+              <li className="flex gap-4 w-[100%] lg:w-[40%]">
                 <Image src={RedCheck} alt="" />
                 <span className="text-[18px] lg:text-[20px] font-medium leading-6">
                   1 Day Rental Available
                 </span>
               </li>
-              <li className="flex gap-4 lg:w-[40%]">
+              <li className="flex gap-4 w-[100%] lg:w-[40%]">
                 <Image src={RedCheck} alt="" />
                 <span className="text-[18px] lg:text-[20px] font-medium leading-6">
                   Driver included
                 </span>
               </li>
-              <li className="flex gap-4 lg:w-[40%]">
+              <li className="flex gap-4 w-[100%] lg:w-[40%]">
                 <Image src={RedCheck} alt="" />
                 <span className="text-[18px] lg:text-[20px] font-medium leading-6">
                   Deposit: AED300
                 </span>
               </li>
-              <li className="flex gap-4 lg:w-[40%]">
+              <li className="flex gap-4 w-[100%] lg:w-[40%]">
                 <Image src={RedCheck} alt="" />
                 <span className="text-[18px] lg:text-[20px] font-medium leading-6">
                   Delivery Know More
                 </span>
               </li>
-              <li className="flex gap-4 lg:w-[40%]">
+              <li className="flex gap-4 w-[100%] lg:w-[40%]">
                 <Image src={RedCheck} alt="" />
                 <span className="text-[18px] lg:text-[20px] font-medium leading-6">
                   Insurance Included
                 </span>
               </li>
-              <li className="flex gap-4 lg:w-[40%]">
+              <li className="flex gap-4 w-[100%] lg:w-[40%]">
                 <Image src={RedCheck} alt="" />
                 <span className="text-[18px] lg:text-[20px] font-medium leading-6">
                   Insurance Included
@@ -110,7 +141,7 @@ export default function CarDetails() {
             </ul>
           </div>
         </div>
-        <div className="check lg:min-w-[450px] bg-[#FAF9F9] shadow-xl rounded-lg px-6 py-10  self-start">
+        <div className="check -order-1 lg:order-6 lg:min-w-[450px] bg-[#FAF9F9] shadow-xl rounded-lg px-6 py-10  self-start">
           <div className=" pb-6 border-b border-[#1e1e1e81]">
             <PricingBox Offer="500 AED/" Price="600 AED" Time="day" />
           </div>
@@ -137,17 +168,11 @@ export default function CarDetails() {
         </div>
       </div>
       <div className="bottom flex flex-col px-5 mb-32 gap-5">
-        <div className="h-[88px] flex justify-between items-center bg-[#FAF9F9] p-5">
-          <span className="font-medium text-[22px] lg:text-[24px]">
-            Supplier Details{" "}
-          </span>
-          <Link href="/">
-            <Image src={ToForward} alt="" />
-          </Link>
-        </div>
+        
 
         <RequirementsModal />
         <FAQModal />
+
       </div>
 
     </div>

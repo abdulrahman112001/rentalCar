@@ -39,7 +39,7 @@ export default function FAQModal() {
             onClose={() => setOPenModal(false)}
             Children={ <div className="container mx-auto my-12 relative px-7">
 
-            <h2 className="text-[24px] font-medium leading-[30px] lg:text-center mb-12">
+            <h2 className="text-[18px] lg:text-[24px] font-medium leading-[30px] text-center mb-12">
                 FREQUENTLY ASKED QUESTIONS
             </h2>
             <div className="accordion lg:w-[560px] mx-auto accordion-faq" >

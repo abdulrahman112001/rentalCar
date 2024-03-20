@@ -19,11 +19,11 @@ export default function RequirementsModal() {
                 <span className='font-medium text-[22px] lg:text-[24px]'>Requirments</span>
                 <Image src={ToForward} alt=''/>
             </div>
-            <ModalComp
+                <ModalComp
             open={openModal}
             onClose={() => setOPenModal(false)}
             Children={ <div className="container mx-auto mb-12 relative px-5 md:px-7">
-                            <h2 className="text-[24px] font-medium leading-[30px] text-center mb-8">
+                            <h2 className="text-[20px] lg:text-[24px] font-medium leading-[30px] text-center mb-8">
                                 Requirments
                             </h2>
                             <div className="requiments lg:w-[560px] mx-auto ">

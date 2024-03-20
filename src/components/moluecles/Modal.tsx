@@ -48,14 +48,14 @@ export default function ModalComp({
         onClose={onClose}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
-        className={`max-w-[700px] mx:max-w-[900px] 2xl:max-w-[950px] z-[9998] m-4  md:m-auto ${className}`}
+        className={`max-w-[700px] mx:max-w-[900px] 2xl:max-w-[950px] z-[9998] m-4  md:m-auto ${className} py-0 modal-camp`}
       >
         <Box
           sx={style}
           className={`scroll_main px-0 md:px-4 rtl:md:!pr-8 dark:!bg-dark-primary  ${classNameBox}`}
         >
           <div
-            className={`absolute ltr:!right-[20px] ltr:left-auto left-[20px] cursor-pointer top-[18px] ${
+            className={`absolute ltr:!right-[20px] ltr:left-auto left-[20px] cursor-pointer top-[15px] ${
               hidden ? "md:hidden" : hiddenMobile ? "hidden" : ""
             } `}
             onClick={onClose}
@@ -64,7 +64,8 @@ export default function ModalComp({
               className=" dark:!text-white"
               style={{ color: theme.palette.primary?.main }}
             /> */}
-            X
+            
+            <span className=" lg:text-[20px] font-semibold text-[#D5281d] z-50 relative">Cancel</span>
           </div>
           <div className="mt-10">{Children}</div>
         </Box>

@@ -107,8 +107,10 @@ import Carousel1 from './Carousel1.png';
 import Slide1 from './Slide1.png';
 import Slide2 from './Slide2.png';
 import Slide3 from './Slide3.png';
-import Emirates from './emirates.svg'
+import Emirates from './emirates.svg';
+import TabNavbar from './TabNavbar.png';
 export {
+    TabNavbar,
     Telephone,
     Emirates,   
     Carousel1,

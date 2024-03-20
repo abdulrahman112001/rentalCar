@@ -4,7 +4,7 @@ import { Diamond, Garage, Vector } from '../../atom/assets'
 
 export default function BigJourneyBox() {
     return (
-        <div className="big-box flex flex-col md:flex-row justify-between items-center my-14 gap-16">
+        <div className="big-box flex flex-col md:flex-row justify-between items-center my-10 md:my-14 gap-10 md:gap-16">
             <JourneyBox
                 image={Vector}
                 description="Easy Booking"

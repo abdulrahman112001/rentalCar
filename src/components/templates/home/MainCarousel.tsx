@@ -20,7 +20,7 @@ export default function MainCarousel() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   return (
-    <>
+    <div className=' -mt-10'>
         <Swiper
         spaceBetween={100}
         loop={true}
@@ -31,19 +31,31 @@ export default function MainCarousel() {
         >
 
             <SwiperSlide>
-                <div className='flex gap-10 flex-wrap px-10 items-center justify-center mb-10'>
-                    <Image  src={Carousel1} alt='' className='min-w-[180px] lg:max-w-[500px]'/>
-                    <div className='flex-grow hidden lg:block'>
-                        <h2 className=" font-medium text-[32px] md:text-[48px]  text-[#D5281D] ">BMW 530i</h2>
-                        <span className='text-[24px] font-medium leading-[30px] mb-6 block text-[#666666]'>(2019)</span>
-                        <PricingBox Offer='AED 130' Time=' /DAY' Price='AED 130' />
-                        <ul className='flex flex-col gap-4 mt-4 mb-6'>
-                            <li className='flex gap-4 '><Image src={RedCheck} alt=''/><span className='text-[20px] font-medium leading-6'>1 Day Rental Available</span></li>
-                            <li className='flex gap-4 '><Image src={RedCheck} alt=''/><span className='text-[20px] font-medium leading-6'>Driver included</span></li>
-                            <li className='flex gap-4 '><Image src={RedCheck} alt=''/><span className='text-[20px] font-medium leading-6'>Deposit: AED300</span></li>
+                <div className='flex gap-4 md:gap-10  items-center justify-center mb-2 md:mb-10 '>
+                    <Image  src={Carousel1} alt='' className='min-w-[120px] min-h-[120px] md:min-w-[400px]'/>
+                    <div className=' min-w-[160px] md:w-auto '>
+                        <div className='flex md:flex-col gap-2 items-center md:items-start  flex-wrap'>
+                            
+                            <h2 className=" font-bold md:font-medium text-[16px] md:text-[48px]  text-[#D5281D] ">BMW 530i</h2>
+                            <span className='text-[14px] md:text-[24px] font-medium leading-[30px] mb-0 md:mb-6 block text-[#666666]'>(2019)</span>
+                        
+                        </div>
+                        <p className='pricing-box flex md:flex-col gap-2 text-[13px] md:text-[20px] font-medium leading-6'>
+                            <span>
+                                <span className='text-[#62c05b]'>AED 130</span>
+                                <span className='text-[#666666]'>/DAY</span>
+                            </span>
+                            <span className=' line-through text-[#D5281D] text-[11px] md:text-[20px] '>
+                                AED 130
+                            </span>
+                        </p>
+                        <ul className='flex flex-col gap-1 md:gap-4 mt-2 md:mt-4 mb-2 md:mb-6 itc'>
+                            <li className='flex items-center gap-2 md:gap-4 '><Image className='w-[15px] h-[15px] md:w-[24px] md:h-[24px]' src={RedCheck} alt=''/><span className='text-[13px] md:text-[20px] font-medium leading-6'>1 Day Rental Available</span></li>
+                            <li className='flex items-center gap-2 md:gap-4 '><Image className='w-[15px] h-[15px] md:w-[24px] md:h-[24px]' src={RedCheck} alt=''/><span className='text-[13px] md:text-[20px] font-medium leading-6'>Driver included</span></li>
+                            <li className='flex items-center gap-2 md:gap-4 '><Image className='w-[15px] h-[15px] md:w-[24px] md:h-[24px]' src={RedCheck} alt=''/><span className='text-[13px] md:text-[20px] font-medium leading-6'>Deposit: AED300</span></li>
                         </ul>
                         <Link href="/OurCars/CarDetails">
-                            <button className="h-[44px]   font-medium text-[20px] leading-6 border hover:shadow-2xl  border-[#1E1E1E]  rounded py-2 px-7 ">
+                            <button className="hidden md:block h-[44px]  font-medium text-[20px] leading-6 border hover:shadow-2xl  border-[#1E1E1E]  rounded py-2 px-7 ">
                                 See Details
                             </button>
                         </Link>
@@ -51,19 +63,31 @@ export default function MainCarousel() {
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className='flex gap-10 flex-wrap px-10 items-center justify-center mb-10'>
-                    <Image  src={Carousel1} alt='' className='min-w-[180px] lg:max-w-[500px]'/>
-                    <div className='flex-grow hidden lg:block'>
-                        <h2 className=" font-medium text-[32px] md:text-[48px]  text-[#D5281D] ">BMW 530i</h2>
-                        <span className='text-[24px] font-medium leading-[30px] mb-6 block text-[#666666]'>(2019)</span>
-                        <PricingBox Offer='AED 130' Time=' /DAY' Price='AED 130' />
-                        <ul className='flex flex-col gap-4 mt-4 mb-6'>
-                            <li className='flex gap-4 '><Image src={RedCheck} alt=''/><span className='text-[20px] font-medium leading-6'>1 Day Rental Available</span></li>
-                            <li className='flex gap-4 '><Image src={RedCheck} alt=''/><span className='text-[20px] font-medium leading-6'>Driver included</span></li>
-                            <li className='flex gap-4 '><Image src={RedCheck} alt=''/><span className='text-[20px] font-medium leading-6'>Deposit: AED300</span></li>
+                <div className='flex gap-4 md:gap-10  items-center justify-center md:mb-10 '>
+                    <Image  src={Carousel1} alt='' className='min-w-[120px] min-h-[120px] md:min-w-[400px]'/>
+                    <div className=' min-w-[160px] md:w-auto '>
+                        <div className='flex md:flex-col gap-2 items-center md:items-start  flex-wrap'>
+                            
+                            <h2 className=" font-bold md:font-medium text-[16px] md:text-[48px]  text-[#D5281D] ">BMW 530i</h2>
+                            <span className='text-[14px] md:text-[24px] font-medium leading-[30px] mb-0 md:mb-6 block text-[#666666]'>(2019)</span>
+                        
+                        </div>
+                        <p className='pricing-box flex md:flex-col gap-2 text-[13px] md:text-[20px] font-medium leading-6'>
+                            <span>
+                                <span className='text-[#62c05b]'>AED 130</span>
+                                <span className='text-[#666666]'>/DAY</span>
+                            </span>
+                            <span className=' line-through text-[#D5281D]  text-[11px] md:text-[20px]'>
+                                AED 130
+                            </span>
+                        </p>
+                        <ul className='flex flex-col gap-1 md:gap-4 mt-2 md:mt-4 mb-2 md:mb-6 itc'>
+                            <li className='flex items-center gap-2 md:gap-4 '><Image className='w-[15px] h-[15px] md:w-[24px] md:h-[24px]' src={RedCheck} alt=''/><span className='text-[13px] md:text-[20px] font-medium leading-6'>1 Day Rental Available</span></li>
+                            <li className='flex items-center gap-2 md:gap-4 '><Image className='w-[15px] h-[15px] md:w-[24px] md:h-[24px]' src={RedCheck} alt=''/><span className='text-[13px] md:text-[20px] font-medium leading-6'>Driver included</span></li>
+                            <li className='flex items-center gap-2 md:gap-4 '><Image className='w-[15px] h-[15px] md:w-[24px] md:h-[24px]' src={RedCheck} alt=''/><span className='text-[13px] md:text-[20px] font-medium leading-6'>Deposit: AED300</span></li>
                         </ul>
                         <Link href="/OurCars/CarDetails">
-                            <button className="h-[44px]   font-medium text-[20px] leading-6 border hover:shadow-2xl  border-[#1E1E1E]  rounded py-2 px-7 ">
+                            <button className="hidden md:block h-[44px]  font-medium text-[20px] leading-6 border hover:shadow-2xl  border-[#1E1E1E]  rounded py-2 px-7 ">
                                 See Details
                             </button>
                         </Link>
@@ -71,25 +95,38 @@ export default function MainCarousel() {
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className='flex gap-10 flex-wrap px-10 items-center justify-center mb-10'>
-                    <Image  src={Carousel1} alt='' className='min-w-[180px] lg:max-w-[500px]'/>
-                    <div className='flex-grow hidden lg:block'>
-                        <h2 className=" font-medium text-[32px] md:text-[48px]  text-[#D5281D] ">BMW 530i</h2>
-                        <span className='text-[24px] font-medium leading-[30px] mb-6 block text-[#666666]'>(2019)</span>
-                        <PricingBox Offer='AED 130' Time=' /DAY' Price='AED 130' />
-                        <ul className='flex flex-col gap-4 mt-4 mb-6'>
-                            <li className='flex gap-4 '><Image src={RedCheck} alt=''/><span className='text-[20px] font-medium leading-6'>1 Day Rental Available</span></li>
-                            <li className='flex gap-4 '><Image src={RedCheck} alt=''/><span className='text-[20px] font-medium leading-6'>Driver included</span></li>
-                            <li className='flex gap-4 '><Image src={RedCheck} alt=''/><span className='text-[20px] font-medium leading-6'>Deposit: AED300</span></li>
+                <div className='flex gap-4 md:gap-10  items-center justify-center md:mb-10 '>
+                    <Image  src={Carousel1} alt='' className='min-w-[120px] min-h-[120px] md:min-w-[400px]'/>
+                    <div className=' min-w-[160px] md:w-auto '>
+                        <div className='flex md:flex-col gap-2 items-center md:items-start  flex-wrap'>
+                            
+                            <h2 className=" font-bold md:font-medium text-[16px] md:text-[48px]  text-[#D5281D] ">BMW 530i</h2>
+                            <span className='text-[14px] md:text-[24px] font-medium leading-[30px] mb-0 md:mb-6 block text-[#666666]'>(2019)</span>
+                        
+                        </div>
+                        <p className='pricing-box flex md:flex-col gap-2 text-[13px] md:text-[20px] font-medium leading-6'>
+                            <span>
+                                <span className='text-[#62c05b]'>AED 130</span>
+                                <span className='text-[#666666]'>/DAY</span>
+                            </span>
+                            <span className=' line-through text-[#D5281D]  text-[11px] md:text-[20px]'>
+                                AED 130
+                            </span>
+                        </p>
+                        <ul className='flex flex-col gap-1 md:gap-4 mt-2 md:mt-4 mb-2 md:mb-6 itc'>
+                            <li className='flex items-center gap-2 md:gap-4 '><Image className='w-[15px] h-[15px] md:w-[24px] md:h-[24px]' src={RedCheck} alt=''/><span className='text-[13px] md:text-[20px] font-medium leading-6'>1 Day Rental Available</span></li>
+                            <li className='flex items-center gap-2 md:gap-4 '><Image className='w-[15px] h-[15px] md:w-[24px] md:h-[24px]' src={RedCheck} alt=''/><span className='text-[13px] md:text-[20px] font-medium leading-6'>Driver included</span></li>
+                            <li className='flex items-center gap-2 md:gap-4 '><Image className='w-[15px] h-[15px] md:w-[24px] md:h-[24px]' src={RedCheck} alt=''/><span className='text-[13px] md:text-[20px] font-medium leading-6'>Deposit: AED300</span></li>
                         </ul>
                         <Link href="/OurCars/CarDetails">
-                            <button className="h-[44px]   font-medium text-[20px] leading-6 border hover:shadow-2xl  border-[#1E1E1E]  rounded py-2 px-7 ">
+                            <button className="hidden md:block h-[44px]  font-medium text-[20px] leading-6 border hover:shadow-2xl  border-[#1E1E1E]  rounded py-2 px-7 ">
                                 See Details
                             </button>
                         </Link>
                     </div>
                 </div>
             </SwiperSlide>
+
 
 
         </Swiper>
@@ -117,6 +154,6 @@ export default function MainCarousel() {
         </SwiperSlide>
     </Swiper>
 
-    </>
+    </div>
 );
 }

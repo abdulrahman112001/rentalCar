@@ -1,5 +1,5 @@
 import React from "react";
-import DatePicker from "./DatePicker";
+import { DatePickerShape } from ".";
 
 export default function SearchBox({ TitleButton , action,className }: any) {
   return (
@@ -9,7 +9,7 @@ export default function SearchBox({ TitleButton , action,className }: any) {
           Pick Up :
         </span>
         {/* <input type="date" name="" id="" className='h-[45px] p-2 rounded-lg shadow '/> */}
-          <DatePicker />
+          <DatePickerShape />
       </div>
       <div className="flex flex-col w-[48%]">
         <span className="font-medium text-[20px] leading-[22px] block mb-2">
@@ -17,7 +17,7 @@ export default function SearchBox({ TitleButton , action,className }: any) {
         </span>
         {/* <input type="date" name="" id="" className='h-[45px] p-2 rounded-lg shadow'/>
          */}
-        <DatePicker />
+        <DatePickerShape />
       </div>
       
       <div className="w-full">

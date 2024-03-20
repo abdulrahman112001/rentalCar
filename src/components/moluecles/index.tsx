@@ -6,6 +6,7 @@ export {default as PricingBox} from './PricingBox';
 export {default as ArticleBox} from './ArticleBox';
 
 export {default as Languages} from './Languages';
+export {default as DatePickerShape} from './DatePicker';
 
 
 

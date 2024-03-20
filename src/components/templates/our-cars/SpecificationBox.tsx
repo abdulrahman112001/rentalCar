@@ -4,7 +4,7 @@ import React from 'react'
 export default function SpecificationBox({image,description}:any) {
     return (
         <div className="box flex flex-col gap-3 items-center">
-            <div className='p-5 bg-[#F3EFEF] w-fit rounded-full'><Image src={image} alt='' className='min-w-[30px]'/></div>
+            <div className=' p-3 lg:p-5 bg-[#F3EFEF] w-fit rounded-full'><Image src={image} alt='' className='w-[25px] lg:min-w-[30px]'/></div>
             <span className='text-[#D5281D]'>{description}</span>
         </div>
     )

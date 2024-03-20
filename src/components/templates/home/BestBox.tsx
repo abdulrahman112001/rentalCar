@@ -41,7 +41,7 @@ export default function   BestBox({
   CarBattery,
 }: any) {
   return (
-    <div className="group best-box w-full sm:w-[47%] lg:w-[32%] shadow-lg rounded-t-lg cursor-pointer">
+    <div className="group best-box w-full sm:w-[47%] lg:w-[32%] shadow-md hover:shadow-lg rounded-lg cursor-pointer">
       <div className="carousel w-full relative">
         
           <Swiper
@@ -79,44 +79,44 @@ export default function   BestBox({
         <Image
           src={Sale}
           alt=""
-          className=" absolute  z-10 -top-4 -left-1"
+          className=" absolute  z-10 -top-0 -left-1"
           hidden={!SaleState}
         />
         <Image
           src={New}
           alt=""
-          className=" absolute  z-10 -top-4 -left-1"
+          className=" absolute  z-10 -top-0 -left-1"
           hidden={!NewState}
         />
       </div>
       <Link
             href="/OurCars/1"
           >
-        <div className="content w-full p-6 bg-[#f3efef71] group-hover:bg-[#EFECEC]">
-          <h2 className=" font-medium text-[24px] leading-7 text-center mb-5">
+        <div className="content w-full p-3 bg-[#f3efef71] ">
+          <h2 className=" font-medium text-[20px] lg:text-[24px] leading-7 text-center mb-3 shadow-black">
             {title}
           </h2>
           <div className="flex justify-center text-center">
-            <div className="border-r-4 border-[#D9D9D9]">
+            <div className="border-r-2 border-[#D9D9D9]">
               <PricingBox Offer={DayOffer} Price={DayPrice} Time="/DAY" />
             </div>
             <PricingBox Offer={WeekOffer} Price={WeekPrice} Time="/MON" />
             {/* <p className='flex flex-col text-[20px] font-medium px-2 leading-6 border-r-4 border-[#D9D9D9]'><span><span className='text-[#62c05b]'>{DayOffer}</span> /DAY</span> <span className=' line-through text-[#D5281D] text-[16px]'>{DayPrice}</span></p> */}
             {/* <p className='flex flex-col text-[20px] font-medium px-2 leading-6 '><span><span className='text-[#62c05b]'>{WeekOffer}</span> /MON</span> <span className=' line-through text-[#D5281D]  text-[16px]'>{WeekPrice}</span></p> */}
           </div>
-          <div className="mt-6 relative">
-            <div className="mt-4 flex flex-wrap gap-x-2 md:gap-x-6 gap-y-3 group-hover:invisible">
+          <div className="mt-4 relative">
+            <div className=" flex flex-wrap gap-x-2 md:gap-x-3 gap-y-3">
               <StateBox image={Door} state={CarDoors} />
-              <StateBox image={Size} state={CarTank} />
-              <StateBox image={Econm} state={CarEconm} />
               <StateBox image={Chair} state={CarSeat} />
-              <StateBox image={Country} state={CarCountry} />
               <StateBox image={Petrol} state={CarBattery} />
+              <StateBox image={Econm} state={CarEconm} />
+              <StateBox image={Size} state={CarTank} />
+              <StateBox image={Country} state={CarCountry} />
             </div>
 
-              <div  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hidden group-hover:block">
+              {/* <div  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hidden group-hover:block">
                 <Image src={SeeDetails} alt="" />
-              </div>
+              </div> */}
           </div>
         </div>
       </Link>
