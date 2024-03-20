@@ -110,12 +110,7 @@ import Slide3 from './Slide3.png';
 import Emirates from './emirates.svg';
 import TabNavbar from './TabNavbar.png';
 export {
-<<<<<<< HEAD
-    TabNavbar,
-    Telephone,
-=======
     // Telephone,
->>>>>>> e0cb468d5fb5b24f42710c3a38f34797db75f41d
     Emirates,   
     Carousel1,
     Slide1,
