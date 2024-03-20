@@ -198,6 +198,7 @@ export {
     R3,
     R4,
     R5,
+    TabNavbar,
     // Suv,
     Sports,
     Luxary,
