@@ -15,7 +15,7 @@ export default function OurCars() {
               <DrawerFilter />
             </div>
             <div className='date-cars'>
-              <DatePickerShape  />
+              {/* <DatePickerShape  /> */}
             </div>
           </div>
 
@@ -24,14 +24,13 @@ export default function OurCars() {
           </div>
           <div className="content flex-grow w-full">
               {/* <SearchBox TitleButton='Search' className=' sticky top-0 z-50 bg-[#FAF9F9] px-3 rounded-lg'/> */}
-              
+              <SearchBox TitleButton='Search' />
             <div className="available-cars">
               <h2 className='font-medium text-[24px] leading-7 mb-5'>
                 Available Cars (320)
               </h2>
               <BigAvailableCarBox />
             </div>
-            <SearchBox TitleButton='Search' />
           </div>
         </div>
     </div>
