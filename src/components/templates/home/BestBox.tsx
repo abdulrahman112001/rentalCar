@@ -28,6 +28,7 @@ export default function   BestBox({
   Image1,
   Image2,
   Image3,
+  Image4,
   title,
   WeekPrice,
   DayPrice,
@@ -44,7 +45,7 @@ export default function   BestBox({
     <div className="group best-box w-full sm:w-[47%] lg:w-[32%] shadow-md hover:shadow-lg rounded-lg cursor-pointer">
       <div className="carousel w-full relative">
         
-          <Swiper
+          {/* <Swiper
             slidesPerView={1}
             spaceBetween={0}
             loop={true}
@@ -70,11 +71,53 @@ export default function   BestBox({
                 <Image src={Image3} alt="" className="w-full rounded-t-lg" />
               </Link>
             </SwiperSlide>
-          </Swiper> 
+          </Swiper>  */}
+
+          <div className="hover-effect group/box flex h-[220px] relative p-3">
+            <div className=" grow group/part ">
+              <Link href="/OurCars/1">
+              <div className=" relative z-10 hidden  group-hover/box:flex   min-w-full h-full text-whitex justify-center items-end">
+                <div className=" bg-[#232224b9] group-hover/part:bg-white h-[5px] w-[90%] absolute  rounded"></div>
+              </div>
+              
+                  <Image src={Image1} alt="" className="w-full h-full z-[4] group-hover/part:z-[8] rounded-t-lg absolute top-0 left-0 " />
+              </Link>
+            </div>
+            <div className=" grow group/part ">
+              <Link href="/OurCars/1">
+              <div className=" relative z-10 hidden  group-hover/box:flex   min-w-full h-full text-whitex justify-center items-end">
+                <div className=" bg-[#232224b9] group-hover/part:bg-white h-[5px] w-[90%] absolute  rounded"></div>
+              </div>
+              
+                  <Image src={Image2} alt="" className="w-full h-full z-[3] group-hover/part:z-[8] rounded-t-lg absolute top-0 left-0" />
+              </Link>
+            </div>
+            <div className=" grow group/part ">
+              <Link href="/OurCars/1">
+              <div className=" relative z-10 hidden  group-hover/box:flex  min-w-full h-full text-white  justify-center items-end">
+                <div className=" bg-[#232224b9] group-hover/part:bg-white h-[5px] w-[90%] absolute  rounded"></div>
+              </div>
+              
+                  <Image src={Image3} alt="" className="w-full h-full z-[2] group-hover/part:z-[8] rounded-t-lg absolute top-0 left-0" />
+              </Link>
+              
+            </div>
+            <div className=" grow group/part ">
+              <Link href="/OurCars/1">
+              <div className=" relative z-10 hidden  group-hover/box:flex  min-w-full h-full text-white  justify-center items-end">
+                <div className=" bg-[#232224b9] group-hover/part:bg-white h-[5px] w-[90%] absolute  rounded"></div>
+              </div>
+              
+                  <Image src={Image4} alt="" className="w-full h-full z- group-hover/part:z-[8] rounded-t-lg absolute top-0 left-0" />
+              </Link>
+              
+            </div>
+
+          </div>
         <Image
           src={CarLogo}
           alt=""
-          className="absolute bottom-[10px] right-[10px] z-10 w-[30px] md:w-[44px]"
+          className="absolute bottom-[20px] right-[10px] z-10 w-[30px] md:w-[44px]"
         />
         <Image
           src={Sale}
