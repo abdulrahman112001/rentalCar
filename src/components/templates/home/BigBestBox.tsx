@@ -16,7 +16,7 @@ import 'swiper/css/pagination';
 export default function BigBestBox() {
     return (
         <>
-            <div className=' sm:hidden my-8 overflow-visible '>
+            {/* <div className=' sm:hidden my-8 overflow-visible '>
             <Swiper
             slidesPerView={1.11}
             spaceBetween={15}
@@ -165,9 +165,9 @@ export default function BigBestBox() {
                             />
                     </SwiperSlide>
                 </Swiper>
-            </div>
+            </div> */}
 
-            <div className="big-box hidden sm:flex flex-wrap justify-between gap-y-8 my-14">
+            <div className="big-box flex flex-wrap justify-between gap-y-8 my-14">
                 <BestBox
                     Image1={R1}
                     Image2={R4}

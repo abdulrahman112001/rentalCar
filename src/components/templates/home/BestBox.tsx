@@ -45,35 +45,42 @@ export default function   BestBox({
     <div className="group best-box w-full sm:w-[47%] lg:w-[32%] shadow-md hover:shadow-lg rounded-lg cursor-pointer">
       <div className="carousel w-full relative">
         
-          {/* <Swiper
-            slidesPerView={1}
-            spaceBetween={0}
-            loop={true}
-            pagination={{
-              clickable: true,
-            }}
-            navigation={NavigationState}
-            modules={[Pagination, Navigation]}
-            className="mySwiper"
-          >
-            <SwiperSlide>
-            <Link href="/OurCars/1">
-              <Image src={Image1} alt="" className="min-w-full rounded-t-lg" />
-            </Link>
-            </SwiperSlide>
-            <SwiperSlide>
+          <div className=" sm:hidden">
+            <Swiper
+              slidesPerView={1}
+              spaceBetween={5}
+              loop={true}
+              pagination={{
+                clickable: true,
+              }}
+              navigation={NavigationState}
+              modules={[Pagination, Navigation]}
+              className="mySwiper"
+            >
+              <SwiperSlide>
               <Link href="/OurCars/1">
-                <Image src={Image2} alt="" className="w-full rounded-t-lg" />
+                <Image src={Image1} alt="" className="min-w-full rounded-t-lg" />
               </Link>
-            </SwiperSlide>
-            <SwiperSlide>
-              <Link href="/OurCars/1">
-                <Image src={Image3} alt="" className="w-full rounded-t-lg" />
-              </Link>
-            </SwiperSlide>
-          </Swiper>  */}
+              </SwiperSlide>
+              <SwiperSlide>
+                <Link href="/OurCars/1">
+                  <Image src={Image2} alt="" className="w-full rounded-t-lg" />
+                </Link>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Link href="/OurCars/1">
+                  <Image src={Image3} alt="" className="w-full rounded-t-lg" />
+                </Link>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Link href="/OurCars/1">
+                  <Image src={Image4} alt="" className="w-full rounded-t-lg" />
+                </Link>
+              </SwiperSlide>
+            </Swiper> 
+          </div>
 
-          <div className="hover-effect group/box flex h-[220px] relative p-3">
+          <div className="hover-effect group/box hidden sm:flex h-[220px] relative p-3">
             <div className=" grow group/part ">
               <Link href="/OurCars/1">
               <div className=" relative z-10 hidden  group-hover/box:flex   min-w-full h-full text-whitex justify-center items-end">

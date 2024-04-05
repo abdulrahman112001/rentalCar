@@ -20,10 +20,10 @@ export default function Main() {
   return (
     <>
       <Introduction />
-      <div className="main-carousel container mx-auto mt-10 px-5 md:px-10">
+      <div className="main-carousel container mx-auto mt-10 px-3 md:px-10">
         <MainCarousel />
       </div>
-      <div className="journey container mx-auto  my-16 md:my-24  px-5">
+      <div className="journey container mx-auto  my-16 md:my-24  px-3">
         <div className="text-center">
           <MainHeading heading="START YOUR JOURNEY" />
         </div>
@@ -48,34 +48,34 @@ export default function Main() {
           className=" absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[80%] md:-translate-y-[75%] w-[270px] md:w-auto"
         />
       </div>
-      <div className="types container mx-auto my-16 md:my-24 px-5 ">
+      <div className="types container mx-auto my-16 md:my-24 px-3 ">
         <div className="text-center">
           <MainHeading heading="CAR TYPES" />
         </div>
         <BigTypeBox />
       </div>
-      <div className="best-cars container mx-auto my-16 md:my-24 px-5">
+      <div className="best-cars container mx-auto my-16 md:my-24 px-3">
         <div className="text-center">
           <MainHeading heading="BEST CARS" />
         </div>
         <BigBestBox />
         <MainButton title="ALL CARS" link="/OurCars" />
       </div>
-      <div className="chuffars container mx-auto my-16 md:my-24 px-5">
+      <div className="chuffars container mx-auto my-16 md:my-24 px-3">
         <div className="text-center">
           <MainHeading heading="CAR & CHUFFAR" />
         </div>
         <BigChauffeurBox />
         <MainButton title="ALL CARS" link="/OurCars" />
       </div>
-      <div className="articles container mx-auto my-16 md:my-24 px-5">
+      <div className="articles container mx-auto my-16 md:my-24 px-3">
         <div className="text-center">
           <MainHeading heading="Articles" />
         </div>
         <BigArticleBox />
         <MainButton link="Blogs" title="All Articles" />
       </div>
-      <div className="reviews container mx-auto my-16 md:my-24 px-5">
+      <div className="reviews container mx-auto my-16 md:my-24 px-3">
         <div className="text-center">
           <MainHeading heading="REVIEWS" />
         </div>
